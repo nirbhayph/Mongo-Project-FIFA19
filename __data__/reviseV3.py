@@ -20,5 +20,5 @@ for counter in range(0, len(v2Json)):
         pass
 
 with open("dataV4.json", "w") as u:
-  json.dump(list(newJson), u)
+  json.dump("["+str(newJson)+"]", u)
   print("File update complete!")
