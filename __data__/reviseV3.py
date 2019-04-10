@@ -19,6 +19,6 @@ for counter in range(0, len(v2Json)):
         print(str(counter) + "<--COULD NOT FIND DESCRIPTION, DID NOT ADD TO LIST")
         pass
 
-with open("dataV3.json", "w") as u:
-  json.dump(newJson, u)
+with open("dataV4.json", "w") as u:
+  json.dump(list(newJson), u)
   print("File update complete!")
