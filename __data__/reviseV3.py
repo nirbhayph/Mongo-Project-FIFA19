@@ -11,6 +11,7 @@ with open("__crawler__/player_descriptions.json", "r") as f:
 
 for counter in range(0, len(v2Json)):
     try:
+        v2Json[str(counter)].pop('', None)
         playerId = v2Json[str(counter)]['ID']
         description = playerJson[str(playerId)]["description"]
         newJson[str(counter)] = v2Json[str(counter)]
