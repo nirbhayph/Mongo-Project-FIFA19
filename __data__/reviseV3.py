@@ -1,5 +1,5 @@
 import json
-
+import os
 v2Json = None
 playerJson = None
 newJson = {}
@@ -17,6 +17,7 @@ for counter in range(0, len(v2Json)):
         newJson[str(counter)]["description"] = description
         jsonFinalDump.append(newJson[str(counter)])
         print(str(counter) + "----------" + str(newJson[str(counter)]["ID"]))
+        #os.system('wget '+str(newJson[str(counter)]["Club Logo"])+" -O clubs/"+str(newJson[str(counter)]["ID"])+".png")
     except Exception as e:
         print(str(counter) + "<--COULD NOT FIND DESCRIPTION, DID NOT ADD TO LIST")
         pass
