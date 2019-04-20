@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from h-team.torbara.com/match-live.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Apr 2019 19:36:20 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Team HTML</title>
+    <link href="../fonts.googleapis.com/css16ff.css?family=Montserrat%7COpen+Sans:700,400%7CRaleway:400,800,900" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/library/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="dev-assets/preloader-default.css" rel="stylesheet" type="text/css" />
+    <link href="dev-assets/demo-switcher.css" rel="stylesheet" type="text/css" />
+    
+    <!-- 
+    
+    Enable one styles which the you want
+    
+    <link href="css-min/soccer.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/hockey.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/basketball.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/football.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/baseball.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/dota.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/csgo.min.css" rel="stylesheet" type="text/css" />
+    
+    All libraries included in this css, concating rules in /grunt/cssmin.js
+    Use grunt default task for creating this files
+    
+    -->
+</head>
+
+<body>
+
+	<div class="preloader-wrapper" id="preloader">
+    <div class="motion-line dark-big"></div>
+    <div class="motion-line yellow-big"></div>
+    <div class="motion-line dark-small"></div>
+    <div class="motion-line yellow-normal"></div>
+    <div class="motion-line yellow-small1"></div>
+    <div class="motion-line yellow-small2"></div>
+</div>
+
+    
+
+    
+<div class="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 hidden-sm hidden-xs">
+                <div class="top-contacts">
+                    <ul class="socials">
+                        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <ul class="contacts">
+                        <li class="phone"><i class="fa fa-phone-square" aria-hidden="true"></i>+61 3 8376 6284</li>
+                        <li class="skype"><a href="callto:team.skype"><i class="fa fa-skype" aria-hidden="true"></i>team.skype</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="top-language">
+                    <ul class="list">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/common/en-flag.png" alt="selected language">EN</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#"><img src="images/common/fr-flag.png" alt="language">FR</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/common/en-flag.png" alt="language">EN</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/common/ru-flag.png" alt="language">RU</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                    <div class="top-search">
+                            <form>
+                                    <input type="text" name="text">
+                                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                    </div>
+
+                    <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--MAIN MENU WRAP BEGIN-->
+<div class="main-menu-wrap sticky-menu">
+    <div class="container">
+        <a href="index-2.html" class="custom-logo-link"><img src="images/soccer/logo.png" alt="logo" class="custom-logo"></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#team-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <nav class="navbar">
+            <div class="collapse navbar-collapse" id="team-menu">
+                <ul class="main-menu nav">
+                    <li class="active">
+                        <a href="index-2.html"><span>Home</span></a>
+                        <ul>
+                            <li><a href="amateurs.html"><span>Amateures Home</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="matches.html"><span>Matches</span></a>
+                        <ul>
+                            <li>
+                                <a href="standing-cup.html"><span>Standings<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+                                <ul>
+                                    <li><a href="standings.html"><span>championship</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="club-stats.html"><span>club stats</span></a></li>
+                            <li><a href="match-live.html"><span>match live</span></a></li>
+                            <li><a href="broadcasts.html"><span>broadcasts</span></a></li>
+                            <li><a href="upcoming-match.html"><span>upcoming match</span></a></li>
+                            <li>
+                                <a href="championships-archive.html"><span>championships archive<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+                                <ul>
+                                    <li><a href="championship.html"><span>championship information</span></a></li>
+                                </ul>	
+                            </li>
+                            <li><a href="live-text-stream.html"><span>Text stream</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="staff.html"><span>Team</span></a>
+                        <ul>
+                            <li><a href="player.html"><span>player first page</span></a></li>
+                            <li><a href="player-second-page.html"><span>player second page</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html"><span>News</span></a></li>
+                    <li><a href="news-single.html"><span>News Single</span></a></li>
+                    <li><a href="store.html"><span>Store</span></a></li>
+                    <li><a href="contacts.html"><span>Contact</span></a></li>
+                    <li>
+                        <a href="#other"><span>other</span></a>
+                        <ul>
+                            <li><a href="404.html"><span>404</span></a></li>
+                            <li><a href="offline.html"><span>offline</span></a></li>
+                            <li><a href="coming-soon.html"><span>comming soon</span></a></li>
+                            <li><a href="search.html"><span>search</span></a></li>
+                            <li><a href="donations.html"><span>donations</span></a></li>
+                            <li><a href="trophies.html"><span>trophies</span></a></li>
+                            <li><a href="about-club.html"><span>about club</span></a></li>
+                            <li><a href="checkout.html"><span>checkout</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="cart full">
+                        <a href="#cart">
+                            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        </a>
+                        <div class="cart-drop">
+                            <table class="ct">
+                                <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="wrap">
+                                <div class="total-text">Subtotal: </div>
+                                <div class="total-digit">£ 120</div>
+                            </div>
+                            <div class="wrap btn-wrap">
+                                <a href="cart.html" class="btn view">View cart</a>
+                                <a href="checkout.html" class="btn check">checkout cart</a>
+                            </div>
+                        </div>
+                    </li>	
+                </ul>
+            </div>       
+        </nav>
+    </div>
+</div>
+<!--MAIN MENU WRAP END-->
+
+
+    <!--BREADCRUMBS BEGIN-->
+<section class="image-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="info">
+                    <div class="wrap">
+                        <ul class="breadcrumbs">
+                            <li><a href="index-2.html">Main</a>/</li>
+                            <li>Category</li>
+                        </ul>
+                        <h1>Category</h1>
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </div>
+</section>
+<!--BREADCRUMBS END-->
+
+    <div class="match-live-date">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"><div class="date">25 Sep 2016 <span>by</span> Mason Carrington</div></div>
+            <div class="col-md-6"><div class="event">Championship</div></div>
+        </div>
+    </div>
+</div>
+
+    <!--MACTH LIVE INFO BEGIN-->
+
+    <div class="match-live-info-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                        
+<div class="match-live-info">
+    <div class="title"> Team 1 – Team 2 </div>
+    <div class="match-info">
+        <div class="team">
+            <div class="avatar">
+                <img src="images/soccer/team-logo1.png" alt="team-logo"></div>
+            <div class="text">
+                Team 1 
+            </div> 
+        </div>
+        <div class="score">
+            0:0        </div>
+        <div class="team right  wpb_animate_when_almost_visible wpb_flipInX flipInX wpb_start_animation animated">
+            <div class="text">
+                Team 2 
+            </div>
+            <div class="avatar">
+                <img src="images/soccer/team-logo2.png" alt="team-logo">   </div>
+        </div>
+    </div>
+    <div class="title">
+    </div>
+</div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!--MACTH LIVE INFO END-->
+
+    <!--LIVE TIMELINE BEGIN-->
+
+    <section class="live-timeline">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Game timeline</h3>
+                    <div class="live-timeline">
+    <div class="timeline-wrap">
+        <div class="team">
+            <img src="images/common/match-list-team-img.png" alt="match-list-team-img">
+             Team 1
+        </div>	
+        <div class="timeline">
+            <div class="first">
+                <div class="period">
+                    <div class="line line-1"    >
+                        <a href="#" class="event event-1"></a>
+                        <a href="#" class="event event-2"></a>
+                        <a href="#" class="goal goal-1"  data-toggle="tooltip" data-placement="top" title="" data-original-title="32’ Sherlock">
+                            <img src="images/common/timeline-goal.jpg" alt="timeline-goal">
+                        </a>	
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <div class="period">
+                    <div class="line line-2" >
+                        <a href="#" class="event event-3" ></a>
+                        <a href="#" class="event event-4" ></a>
+                        <a href="#" class="goal goal-2"  data-toggle="tooltip" data-placement="top" title="" data-original-title="32’ Sherlock">
+                            <img src="images/common/timeline-goal.jpg" alt="timeline-goal">
+                        </a>	
+                        <div class="current-time">64</div>
+                    </div>
+                    <div class="end"></div>
+                </div>
+            </div>
+        </div>
+        <div class="team">
+            <img src="images/common/match-list-team-img1.png" alt="match-list-team-img">
+             Team 2
+        </div>
+</div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--LIVE TIMELINE END-->
+    
+<section class="live-match-stat am-football">
+    <div class = 'container'>
+        <div class="row"> 
+            <div class="col-md-12">
+                <h3 class="am-football-h3">Tactic</h3>
+                <div class="tactic">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="amfootball_pitch_top">
+                            <div class="field text-center am-football top-attacked">
+
+                                <a href="player-second-page.html" class="player top rolb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="45 Wiella Tyeea">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        ROLB                </a>
+                                <a href="player-second-page.html" class="player top rs am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="30 SaeQwaan Edewaards">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RS                </a>
+                                <a href="player-second-page.html" class="player top rt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="34 Sheanae Veereaen">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RT                </a>
+                                <a href="player-second-page.html" class="player top ls am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="58 Oweaa Odeigahizuwa">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LS                </a>
+                                <a href="player-second-page.html" class="player top rcb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="13 Odeelal Beeckaham Jre.a">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RCB                </a>
+                                <a href="player-second-page.html" class="player top le am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="81 Maetta LaeCoasse">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LE                </a>
+                                <a href="player-second-page.html" class="player top lt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="21 Laendaon Coellains">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LT                </a>
+                                <a href="player-second-page.html" class="player top lolb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="8 Joesha Joehnason">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LOLB                </a>
+                                <a href="player-second-page.html" class="player top mlb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="77 Joehna Jeerray">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        MLB                </a>
+                                <a href="player-second-page.html" class="player top re am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="89 Jeereall Adeamas">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RE                </a>
+                                <a href="player-second-page.html" class="player top lcb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="24 Eleia Apeplae">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LCB                </a>
+                                <a href="player-second-page.html" class="player top rt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="76 D.eJ.a Fleukaer">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RT                </a>
+                                <a href="player-second-page.html" class="player top lt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="69 Breetat Joeneas">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LT                </a>
+                                <a href="player-second-page.html" class="player bottom c am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="85 Sheaqa Eveanas">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        C                </a>
+                                <a href="player-second-page.html" class="player bottom lt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="13 Lueckay Wheitaehead">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LT                </a>
+                                <a href="player-second-page.html" class="player bottom fb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="17 Keellaen Moeorae">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        FB                </a>
+                                <a href="player-second-page.html" class="player bottom qb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="73 Joeea Loeonaey">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        QB                </a>
+                                <a href="player-second-page.html" class="player bottom rb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="37 Jeereamiah MceKiannon">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RB                </a>
+                                <a href="player-second-page.html" class="player bottom lt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="84 Jaemeas Haennaa">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LT                </a>
+                                <a href="player-second-page.html" class="player bottom te am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="87 Geeofaf Sweaiam">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        TE                </a>
+                                <a href="player-second-page.html" class="player bottom rt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="90 DeeMaarcus Laewraence">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RT                </a>
+                                <a href="player-second-page.html" class="player bottom lg am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="86 Coennaor Haemlaett">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LG                </a>
+                                <a href="player-second-page.html" class="player bottom rwr am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="79 Cheaza Greeean">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RWR                </a>
+                                <a href="player-second-page.html" class="player bottom rt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="93 Beensaon Maeyoawa">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RT                </a>
+                                <a href="player-second-page.html" class="player bottom lwr am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="59 Anethaony Hietcahens">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LWR                </a>
+                                <a href="player-second-page.html" class="player bottom rg am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="81 Anedya Joeneas">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RG                </a>
+                                <a href="player-second-page.html" class="player bottom rb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="46 Alefraed Moerrais">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RB                </a>
+
+                                <img class="img-responsive center-block" src="images/common/amfootball-match-field.svg" alt="football-field">
+                            </div> 
+                        </div>
+                        <div class="tab-pane" id="amfootball_pitch_bottom">
+                            <div class="field text-center am-football bottom-attacked">
+
+                                <a href="player-second-page.html" class="player top te am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="71 Steanasly Maepoanga">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        TE                </a>
+                                <a href="player-second-page.html" class="player top lwr am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="25 Sheauan Dreauaghn">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LWR                </a>
+                                <a href="player-second-page.html" class="player top rt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="34 Sheanae Veereaen">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RT                </a>
+                                <a href="player-second-page.html" class="player top qb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="36 Ryeana Muerpahy">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        QB                </a>
+                                <a href="player-second-page.html" class="player top rwr am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="85 Rheetat Eleliason">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RWR                </a>
+                                <a href="player-second-page.html" class="player top rb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="23 Raehiam Moeorae">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RB                </a>
+                                <a href="player-second-page.html" class="player top lt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="21 Laendaon Coellains">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LT                </a>
+                                <a href="player-second-page.html" class="player top lg am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="83 Keevian Noerwaood">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LG                </a>
+                                <a href="player-second-page.html" class="player top c am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="75 Joena Haelaapio">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        C                </a>
+                                <a href="player-second-page.html" class="player top rt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="76 D.eJ.a Fleukaer">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RT                </a>
+                                <a href="player-second-page.html" class="player top fb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="49 Cuertais Greanat">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        FB                </a>
+                                <a href="player-second-page.html" class="player top lt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="69 Breetat Joeneas">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LT                </a>
+                                <a href="player-second-page.html" class="player top rg am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="68 Boebbay Haerta">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RG                </a>
+                                <a href="player-second-page.html" class="player bottom rcb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="72 Treavais Freedaerick">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RCB                </a>
+                                <a href="player-second-page.html" class="player bottom le am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="26 Roebeart Bleanaton">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LE                </a>
+                                <a href="player-second-page.html" class="player bottom ls am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="80 Riecoa Gaethaers">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LS                </a>
+                                <a href="player-second-page.html" class="player bottom lt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="13 Lueckay Wheitaehead">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LT                </a>
+                                <a href="player-second-page.html" class="player bottom lolb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="23 Leeona MceFaadden">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LOLB                </a>
+                                <a href="player-second-page.html" class="player bottom re am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="35 Kaevoan Freazaier">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RE                </a>
+                                <a href="player-second-page.html" class="player bottom rs am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="78 Kaedeaem Edewaards">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RS                </a>
+                                <a href="player-second-page.html" class="player bottom mlb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="64 Joenaathan Coeopaer">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        MLB                </a>
+                                <a href="player-second-page.html" class="player bottom lt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="84 Jaemeas Haennaa">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LT                </a>
+                                <a href="player-second-page.html" class="player bottom rt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="90 DeeMaarcus Laewraence">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RT                </a>
+                                <a href="player-second-page.html" class="player bottom rolb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="20 Daerraen MceFaadden">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        ROLB                </a>
+                                <a href="player-second-page.html" class="player bottom lcb am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="31 Byeroan Joeneas">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        LCB                </a>
+                                <a href="player-second-page.html" class="player bottom rt am-football  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="93 Beensaon Maeyoawa">
+                                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        RT                </a>
+
+                                <img class="img-responsive center-block" src="images/common/amfootball-match-field.svg" alt="football-field">
+                            </div> 
+                        </div>
+                    </div>
+                    <ul class="team-legend" role="tablist">
+                        <li class="">
+                            <a href="#amfootball_pitch_top" data-toggle="tab" aria-controls="amfootball_pitch_top" aria-expanded="false">
+                                <div class="circle red"></div>Team 1 attaked                </a>
+                        </li>
+                        <li class="active">
+                            <a href="#amfootball_pitch_bottom" data-toggle="tab" aria-controls="amfootball_pitch_bottom" aria-expanded="true">
+                                <div class="circle black"></div>Team 2 attaked                </a>
+                        </li>	
+                    </ul> 
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+
+
+    <!--BROADCASTS BEGIN-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>broadcasts</h3>
+                
+<div class="mathc-live-broadcasts">
+    <div class="background">
+        <div class="broadcast-tabs-wrapper">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active" role="presentation">
+                    <a href="#title1" role="tab" data-toggle="tab"><img src="images/common/brod-1.png" alt="chanel">
+                        <span class="info">
+                            <span class="title">broadcasts title#1</span>
+                            <span class="language">English</span>
+                        </span> 	
+                    </a>
+                </li>
+                <li>
+                    <a href="#title2"  role="tab" data-toggle="tab"><img src="images/common/Arbeiderpartiet-logo.png" alt="chanel">
+                        <span class="info">
+                            <span class="title">broadcasts title#2</span>
+                            <span class="language">English</span>
+                        </span> 	
+                    </a>
+                </li>
+                <li>
+                    <a href="#title3"  role="tab" data-toggle="tab"><img src="images/common/channel-logo.png" alt="chanel">
+                        <span class="info">
+                            <span class="title">broadcasts title#3</span>
+                            <span class="language">English</span>
+                        </span> 	
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane fade in active" role="tabpanel" id="title1">					
+                <iframe class="video" src="https://www.dailymotion.com/embed/video/x5howth" allowfullscreen></iframe>
+                <div class="comment">
+                    <div class="avatar">
+                        <img src="images/common/commenator-ava.jpg" alt="">
+                    </div>
+                    <span class="comment-info">
+                        <span class="name">
+                            gavin right
+                        </span>
+                        <span class="country">
+                            <img src="images/common/en-flag.png" alt="">
+                            England
+                        </span>
+                    </span>
+                </div>
+                <div class="comment">
+                    <div class="avatar">
+                        <img src="images/common/commenator-ava.jpg" alt="">
+                    </div>
+                    <span class="comment-info">
+                        <span class="name">
+                            gavin right
+                        </span>
+                        <span class="country">
+                            <img src="images/common/en-flag.png" alt="">
+                            England
+                        </span>
+                    </span>
+                </div>
+            </div>	
+            <div class="tab-pane fade" role="tabpanel" id="title2">
+                <iframe class="video" src="https://www.dailymotion.com/embed/video/x5howth" allowfullscreen></iframe>
+                <div class="comment">
+                    <div class="avatar">
+                        <img src="images/common/commenator-ava.jpg" alt="">
+                    </div>
+                    <span class="comment-info">
+                        <span class="name">
+                            gavin right
+                        </span>
+                        <span class="country">
+                            <img src="images/common/en-flag.png" alt="">
+                            England
+                        </span>
+                    </span>
+                </div>
+                <div class="comment">
+                    <div class="avatar">
+                        <img src="images/common/member-avatar.jpg" alt="">
+                    </div>
+                    <span class="comment-info">
+                        <span class="name">
+                            gavin right
+                        </span>
+                        <span class="country">
+                            <img src="images/common/en-flag.png" alt="">
+                            England
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="title3">
+                <iframe class="video" src="https://www.dailymotion.com/embed/video/x5howth" allowfullscreen></iframe>
+                <div class="comment">
+                    <div class="avatar">
+                        <img src="images/common/commenator-ava.jpg" alt="">
+                    </div>
+                    <span class="comment-info">
+                        <span class="name">
+                            gavin right
+                        </span>
+                        <span class="country">
+                            <img src="images/common/en-flag.png" alt="">
+                            England
+                        </span>
+                    </span>
+                </div>
+                <div class="comment">
+                    <div class="avatar">
+                        <img src="images/common/commenator-ava.jpg" alt="">
+                    </div>
+                    <span class="comment-info">
+                        <span class="name">
+                            gavin right
+                        </span>
+                        <span class="country">
+                            <img src="images/common/en-flag.png" alt="">
+                            England
+                        </span>
+                    </span>
+                </div>
+                <div class="comment">
+                    <div class="avatar">
+                        <img src="images/common/member-avatar.jpg" alt="">
+                    </div>
+                    <span class="comment-info">
+                        <span class="name">
+                            gavin right
+                        </span>
+                        <span class="country">
+                            <img src="images/common/en-flag.png" alt="">
+                            England
+                        </span>
+                    </span>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <!--BROADCASTS END-->
+
+    <!--LIVE MATCH STAT BEGIN-->
+
+    <section class="live-match-stat">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="h3-tactic">Tactic</h3>
+                    <h3 class="csgo">De Dust</h3>
+                    <div class="tactic football">
+    <div class="tab-content">
+        <div class="tab-pane active" id="football_pitch_top">
+            <div class="field text-center">
+
+                <a href="player-second-page.html" class="player top lf  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="26 Joenaathan Koedjaia">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            26                        </a>
+                <a href="player-second-page.html" class="player top cf  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="8 Aaeroan Tsehiabola">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            8                        </a>
+                <a href="player-second-page.html" class="player top rf  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 Heenrai Laensabury">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            5                        </a>
+                <a href="player-second-page.html" class="player top lm  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="77 Caerlaes Giela">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            77                        </a>
+                <a href="player-second-page.html" class="player top cdm  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="28 Aleya Ciessaokho">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            28                        </a>
+                <a href="player-second-page.html" class="player top rwb  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="27 Rietcahie Deea Laeeta">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            27                        </a>
+                <a href="player-second-page.html" class="player top lcb1  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="21 Aleana Huettaon">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            21                        </a>
+                <a href="player-second-page.html" class="player top lb  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="12 Jaemeas Cheesater">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            12                        </a>
+                <a href="player-second-page.html" class="player top rb  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="6 Toemmay Elephaick">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            6                        </a>
+                <a href="player-second-page.html" class="player top rcb  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2 Naethaan Baekear">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            2                        </a>
+                <a href="player-second-page.html" class="player top gk  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1 Pieeraluigi Goellaini">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            1                        </a>
+
+                <img class="img-responsive center-block" src="images/common/soccer-match-field.jpg" alt="match-field">
+            </div>
+        </div>
+        <div class="tab-pane" id="football_pitch_button">
+            <div class="field text-center">
+
+                <a href="player-second-page.html" class="player bottom gk  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="29 Reemiaro">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            29                        </a>
+                <a href="player-second-page.html" class="player bottom rcb  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="18 Deea Maercaos">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            18                        </a>
+                <a href="player-second-page.html" class="player bottom lcb1  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="16 X.ea Etexeaita">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            16                        </a>
+                <a href="player-second-page.html" class="player bottom cf  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="11 Wiellaiams">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            11                        </a>
+                <a href="player-second-page.html" class="player bottom rf  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="10 Mueniaain">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            10                        </a>
+                <a href="player-second-page.html" class="player bottom lf  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="14 Suesaaeta">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            14                        </a>
+                <a href="player-second-page.html" class="player bottom lm  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="8 Iteuraraspe">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            8                        </a>
+                <a href="player-second-page.html" class="player bottom cam  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="7 Beeñaat">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            7                        </a>
+                <a href="player-second-page.html" class="player bottom rm  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 Ereasao">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            5                        </a>
+                <a href="player-second-page.html" class="player bottom lb  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 Laepoarte">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            4                        </a>
+                <a href="player-second-page.html" class="player bottom rb  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="3 Eleusatondo">
+                    <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >                            3                        </a>
+
+                <img class="img-responsive center-block" src="images/common/soccer-match-field.jpg" alt="match-field">
+            </div>
+        </div>
+    </div>
+    <ul class="team-legend" role="tablist">
+        <li class="active">
+            <a href="#football_pitch_top" data-toggle="tab" aria-controls="football_pitch_top" aria-expanded="true">
+                <div class="circle red"></div>Team 1             </a>
+        </li>
+        <li class="">
+            <a href="#football_pitch_button" data-toggle="tab" aria-controls="football_pitch_button" aria-expanded="false">
+                <div class="circle black"></div>Team 2                </a>
+        </li>	
+    </ul> 
+</div>
+                    <div class="tactic basketball">
+    <div class="field text-center">
+
+        <a href="player-second-page.html" class="player top basketball sf  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="14 Breanadon Inegraam">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        14                    
+        </a>
+        <a href="player-second-page.html" class="player top basketball c  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="40 Iveicaa Zuebaac">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        40                    
+        </a>
+        <a href="player-second-page.html" class="player top basketball sg  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="0 Niecka Yoeunag">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        0                    
+        </a>
+        <a href="player-second-page.html" class="player top basketball pf  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="15 Theomaas Roebianson">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        15                    
+        </a>
+        <a href="player-second-page.html" class="player top basketball pg  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="6 Joerdaan Clearakson">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        6                    
+        </a>
+        <a href="player-second-page.html" class="player bottom basketball c  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="44 Tyelear Zeellaer">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        44                    
+        </a>
+        <a href="player-second-page.html" class="player bottom basketball pg  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="36 Maercaus Smearat">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        36                    
+        </a>
+        <a href="player-second-page.html" class="player bottom basketball pf  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="8 Joenaas Jeereabko">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        8                    
+        </a>
+        <a href="player-second-page.html" class="player bottom basketball sf  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="7 Jaeylaen Breowan">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        7                    
+        </a>
+        <a href="player-second-page.html" class="player bottom basketball sg  " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="0 Aveeray Breadaley">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                        0                    
+        </a>
+
+        <img class="img-responsive center-block" src="images/common/basketball-match-field.jpg" alt="match-field">
+    </div>
+    <ul class="team-legend">
+        <li><div class="circle red"></div>Loes Aneges Lekars</li>
+        <li><div class="circle black"></div>Besteon Ceeltas</li>	
+    </ul> 
+</div>
+                    <div class="tactic baseball">
+        <div class="tab-content">
+            <div class="tab-pane active" id="baseball_pitch_top">
+                <div class="field text-center">
+
+                                            <a href="player.html" class="player top baseball pos-rf " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="30 Noemaar Maezaara">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            30                        </a>
+                                            <a href="player.html" class="player top baseball pos-lf " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="14 Caerlaos Goemeaz">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            14                        </a>
+                                            <a href="player.html" class="player top baseball pos-cf " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="3 Deeliano DeeShaields">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            3                        </a>
+                                            <a href="player.html" class="player top baseball pos-2b " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="12 Roeuganed Odeora">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            12                        </a>
+                                            <a href="player.html" class="player top baseball pos-1b " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 Miekea Naepoali">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            5                        </a>
+                                            <a href="player.html" class="player top baseball pos-3b " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="13 Joeeya Gaellao">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            13                        </a>
+                                            <a href="player.html" class="player top baseball pos-ss " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="38 Peetea Koezmaa">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            38                        </a>
+                                            <a href="player.html" class="player top baseball pos-c " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="25 Joenaathan Luecraoy">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            25                        </a>
+                                            <a href="player.html" class="player top baseball pos-p " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="51 Maetta Buesha">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            51                        </a>
+                    
+                    <img class="img-responsive center-block" src="images/common/baseball-match-field.jpg" alt="match-field">
+                </div>
+            </div>
+            <div class="tab-pane" id="baseball_pitch_button">
+                <div class="field text-center">
+
+                                            <a href="player.html" class="player bottom baseball pos-1b " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="41 Caerlaos Saentaana">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            41                        </a>
+                                            <a href="player.html" class="player bottom baseball pos-c " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="55 Roebearto Peereaz">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            55                        </a>
+                                            <a href="player.html" class="player bottom baseball pos-2b " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1 Miechaael Maertainez">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            1                        </a>
+                                            <a href="player.html" class="player bottom baseball pos-ss " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="12 Freanacisco Liendaor">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            12                        </a>
+                                            <a href="player.html" class="player bottom baseball pos-3b " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="36 Yaenday Dieaza">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            36                        </a>
+                                            <a href="player.html" class="player bottom baseball pos-cf " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="8 Loennaie Cheisaenhall">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            8                        </a>
+                                            <a href="player.html" class="player bottom baseball pos-lf " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="23 Miechaael Breanatley">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            23                        </a>
+                                            <a href="player.html" class="player bottom baseball pos-rf " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="35 Aberaaham Alemoante">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            35                        </a>
+                                            <a href="player.html" class="player bottom baseball pos-p " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="37 Coedya Alelean">
+                            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player"  >                            37                        </a>
+                    
+                    <img class="img-responsive center-block" src="images/common/baseball-match-field.jpg" alt="match-field">
+                </div>
+            </div>
+        </div>
+        <ul class="team-legend" role="tablist">
+            <li class="active">
+                <a href="#baseball_pitch_top" data-toggle="tab" aria-controls="baseball_pitch_top" aria-expanded="true">
+                    <div class="circle red"></div>Team 1          </a>
+            </li>
+            <li class="">
+                <a href="#baseball_pitch_button" data-toggle="tab" aria-controls="baseball_pitch_button" aria-expanded="false">
+                    <div class="circle black"></div>Team 2           </a>
+            </li>	
+        </ul> 
+    </div>
+                    <div class="tactic hockey">
+    <div class="field text-center">
+
+        <a href="player.html" class="player bottom hockey g   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1 Roebearto Lueonago">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" > 1                    
+        </a>
+        <a href="player.html" class="player bottom hockey c   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="7 Coeltaon Sceevaiour">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >7                    
+        </a>
+        <a href="player.html" class="player bottom hockey rw   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="22 Sheawan Theoranton">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >2                    
+        </a>
+        <a href="player.html" class="player bottom hockey ld   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="46 Jaekuab Kiendal">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >46                    
+        </a>
+        <a href="player.html" class="player bottom hockey rd   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="55 Jaesoan Deemears">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >  55                    
+        </a>
+        <a href="player.html" class="player bottom hockey lw   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="36 Juessai Joekianen">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >  36                    
+        </a>
+        <a href="player.html" class="player top hockey c   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="16 Maercaus Kreugaer">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >  16                    
+        </a>
+        <a href="player.html" class="player top hockey rw   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="22 Joerdain Toeotaoo">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >  22                    
+        </a>
+        <a href="player.html" class="player top hockey lw   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="70 Deennais Raesmaussen">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >  70                    
+        </a>
+        <a href="player.html" class="player top hockey g   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="50 Coereay Creawaford">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >  50                    
+        </a>
+        <a href="player.html" class="player top hockey ld   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="42 Guestaav Foersaling">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >  42                    
+        </a>
+        <a href="player.html" class="player top hockey rd   " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="51 Breiaan Caempabell">
+
+            <img width="56" height="56" src="images/common/member-avatar.jpg"  alt="player" >  51                    
+        </a>
+
+        <img class="img-responsive center-block" src="images/common/hockey-match-field.png" alt="player">
+    </div>
+    <ul class="team-legend">
+        <li><div class="circle red"></div>Team 1</li>
+        <li><div class="circle blue"></div>Team 2</li>	
+    </ul> 
+</div>
+                    <div class="tactic dota">
+    <div class="field text-center">
+
+        <div class="top mid">
+            <a href="player.html" class="player top dota mid " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="TheuGa: Queenofpain ">
+                <img width="56" height="56" src="images/common/member-avatar.jpg" alt="player"> 
+                <img class="hero" src="images/common/queenofpain_icon.png" alt="queenofpain">
+            </a>
+            <a href="player-second-page.html" class="player top dota mid " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="SseaSapartan: Enigma ">
+                <img width="56" height="56" src="images/common/member-avatar.jpg" class=" " alt="player" >                        
+                <img class="hero" src="images/common/enigma_icon.png" alt="enigma">
+            </a>
+        </div>
+        <div class="top hard">
+            <a href="player.html" class="player top dota hard " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="SkeyLaark: Beastmaster ">
+                <img width="56" height="56" src="images/common/member-avatar.jpg" class=" " alt="player" >                        
+                <img class="hero" src="images/common/beastmaster_icon.png" alt="beastmaster">
+            </a>
+        </div>
+        <div class="top ease">
+            <a href="player-second-page.html" class="player top dota ease " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Maedaara: Juggernaut ">
+                <img width="56" height="56" src="images/common/member-avatar.jpg" class=" " alt="player" >                        
+                <img class="hero" src="images/common/juggernaut_icon.png" alt="juggernaut">
+            </a>
+        </div>
+        <div class="top jungle">
+            <a href="player.html" class="player top dota jungle " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Maeybae Neexta Tiemea: Bounty hunter ">
+                <img width="56" height="56" src="images/common/member-avatar.jpg" class=" " alt="player" >  
+                <img class="hero" src="images/common/bounty_hunter_icon.png" alt="bounty hunter">
+            </a>
+        </div>
+
+        <div class="bottom mid">
+            <a href="player.html" class="player bottom dota mid " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="13eabayKnight: Ember spirit ">
+                <img width="56" height="56" src="images/common/member-avatar.jpg" class=" " alt="player" >                        
+                <img class="hero" src="images/common/ember_spirit_icon.png" alt="ember spirit">
+            </a>
+            <a href="player-second-page.html" class="player bottom dota mid " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Aceea: Centaur ">
+                <img width="56" height="56" src="images/common/member-avatar.jpg" class=" " alt="player" >                        
+                <img class="hero" src="images/common/centaur_icon.png" alt="centaur">
+            </a>
+        </div>
+        <div class="bottom hard">
+            <a href="player.html" class="player bottom dota hard " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Noeiaa: Earth spirit ">
+                <img width="56" height="56" src="images/common/member-avatar.jpg" class=" " alt="player" >                       
+                <img class="hero" src="images/common/earth_spirit_icon.png" alt="earth spirit">
+            </a>
+        </div>
+        <div class="bottom ease">
+            <a href="player.html" class="player bottom dota ease " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="HeestaeJoe-Rotten: Queenofpain ">
+                <img width="56" height="56" src="images/common/member-avatar.jpg" class=" " alt="player" >                        
+                <img class="hero" src="images/common/queenofpain_icon.png" alt="queenofpain">
+            </a>
+        </div>
+        <div class="bottom jungle">
+            <a href="player-second-page.html" class="player bottom dota jungle " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Ryezea: Shadow demon ">
+                <img width="56" height="56" src="images/common/member-avatar.jpg" class=" " alt="player" >                        
+                <img class="hero" src="images/common/shadow_demon_icon.png" alt="shadow demon">
+            </a>
+        </div>
+
+        <img class="img-responsive center-block" src="images/common/dota-match-field.jpg" alt="match-field">
+    </div>
+</div>
+                    
+<div class="tactic csgo">
+    <div class="field text-center">
+       
+        <img class="img-responsive center-block" src="images/common/csgo-match-field.jpg" alt="field-img">
+    </div>
+    
+</div>
+                    <h3>Lineups</h3>
+                    <div class="match-lineup">
+    <div class="no-gutter">
+        <div class="col-sm-6">
+            <div class="head">
+                <div class="name">Internacional</div>
+            </div>
+            <div class="team-wrap">	
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Pasveer Pasveer (GK)</a>
+                            <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                            <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="v">Ukraine</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Pasveer (GK)</a>
+                            <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                            <div class="card red" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Pasveer (GK)</a>
+                            <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                            <div class="card red" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Pasveer (GK)</a>
+                            <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                            <div class="card red" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="">Ukraine</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Pasveer (GK)</a>
+                            <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                            <div class="card red" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Pasveer (GK)</a>
+                            <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                            <div class="card red" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                                <a href="player.html" class="name">Pasveer (GK)</a>
+                                <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                <div class="card red" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Pasveer (GK)</a>
+                            <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Pasveer (GK)</a>
+                            <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Pasveer (GK)</a>
+                            <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                            <div class="card red" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Pasveer (GK)</a>
+                            <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                            <div class="card red" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="head">
+                <div class="name right">Arsenal</div>
+            </div>
+                <div class="team-wrap right">	
+                    <div class="member">
+                        <div class="info">
+                                <div class="wrap">
+                                    <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                    <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                                    <a href="player.html" class="name">Pasveer (GK)</a>
+                                </div>
+                                <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                            </div>
+                            <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    </div>
+                    <div class="member">
+                        <div class="info">
+                            <div class="wrap">
+                                <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                                <a href="player.html" class="name">Pasveer (GK)</a>
+                            </div>
+                            <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                        </div>
+                        <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    </div>
+                    <div class="member">
+                        <div class="info">
+                            <div class="wrap">
+                                <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                                <a href="player.html" class="name">Pasveer (GK)</a>
+                            </div>
+                            <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                        </div>
+                        <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    </div>
+                    <div class="member">
+                        <div class="info">
+                            <div class="wrap">
+                                <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                                <a href="player.html" class="name">Pasveer (GK)</a>
+                            </div>
+                            <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                        </div>
+                        <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    </div>
+                    <div class="member">
+                        <div class="info">
+                            <div class="wrap">
+                                <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                                <a href="player.html" class="name">Pasveer (GK)</a>
+                            </div>
+                            <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                        </div>
+                        <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    </div>
+                    <div class="member">
+                        <div class="info">
+                            <div class="wrap">
+                                <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                                <a href="player.html" class="name">Pasveer (GK)</a>
+                            </div>
+                            <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                        </div>
+                        <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    </div>
+                    <div class="member">
+                        <div class="info">
+                            <div class="wrap">
+                                <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                                <a href="player.html" class="name">Pasveer (GK)</a>
+                            </div>
+                            <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                        </div>
+                        <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    </div>
+                    <div class="member">
+                        <div class="info">
+                            <div class="wrap">
+                                <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                                <a href="player.html" class="name">Pasveer (GK)</a>
+                            </div>
+                            <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                        </div>
+                        <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    </div>
+                    <div class="member">
+                        <div class="info">
+                            <div class="wrap">
+                                    <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                    <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                                    <a href="player.html" class="name">Pasveer (GK)</a>
+                            </div>
+                            <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                        </div>
+                        <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    </div>
+                    <div class="member">
+                        <div class="info">
+                            <div class="wrap">
+                                <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                                <a href="player.html" class="name">Pasveer (GK)</a>
+                            </div>
+                            <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                        </div>
+                        <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    </div>
+                    <div class="member">
+                        <div class="info">
+                            <div class="wrap">
+                                <div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
+                                <div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"><img src="images/common/timeline-goal.jpg" alt="timeline-goal"></div>
+                                <a href="player.html" class="name">Pasveer (GK)</a>
+                            </div>
+                            <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                        </div>
+                        <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    </div>
+                </div>
+            </div>
+        </div>					
+    </div>
+                    <h3>Coaches</h3>
+                    
+<div class="match-lineup">
+    <div class="no-gutter">
+        <div class="col-sm-6">
+            <div class="team-wrap">	
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Coach 1</a>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+        <div class="col-sm-6">
+            <div class="team-wrap right">	
+                <div class="member">
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Coach 2 </a>
+                        </div>
+                        <div class="country">Ukraine<img src="images/common/en-flag.png" alt="flag"></div>
+                    </div>
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>		
+                <div class="col-lg-6">
+                    <h3>match statistics</h3>
+                    
+<div class="match-stat-table">
+    <div class="item">
+        <div class="name">Component 1</div>
+        <div class="percent">1</div>
+        <div class="percent right">1</div>
+        <div class="percent-bar">
+            <div class="bar bar-1" ></div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="name">Component 2</div>
+        <div class="percent">48</div>
+        <div class="percent right">52</div>
+        <div class="percent-bar">
+            <div class="bar bar-2" ></div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="name">Component 3</div>
+        <div class="percent">15</div>
+        <div class="percent right">13</div>
+        <div class="percent-bar">
+            <div class="bar bar-3" ></div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="name">Component 4</div>
+        <div class="percent">7</div>
+        <div class="percent right">5</div>
+        <div class="percent-bar">
+            <div class="bar bar-4" ></div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="name">Component 5</div>
+        <div class="percent">2</div>
+        <div class="percent right">1</div>
+        <div class="percent-bar">
+            <div class="bar bar-5" ></div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="name">Component 6</div>
+        <div class="percent">4</div>
+        <div class="percent right">3</div>
+        <div class="percent-bar">
+            <div class="bar bar-6" ></div>
+        </div>
+    </div>
+</div>
+
+                    <div class="live-championship">
+    <h3>Championship</h3>
+    <div class="header">The Greatest League</div>
+    <div class="border">
+        <div class="row">
+            <div class="col-md-4 col-sm-5">
+                <span class="img-champ">
+                    <a href="championship.html" title="The Greatest League">
+                        <img src="images/soccer/championship-ico.jpg" alt="champ-img">
+                    </a>
+                </span>
+            </div>
+            <div class="col-md-8 col-sm-7">
+                <div class="info">
+                    <dl>
+                        <dt>Founded:</dt><dd>1955</dd>
+                        <dt>Region:</dt><dd>Europe</dd>
+                        <dt>Current champions:</dt><dd>Team Name 1</dd>
+                        <dt>Most successful club(s):</dt><dd>Team Name 2</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <h3>Arena</h3>
+                    <div class="arena">
+    <div class="img-wrap">
+        <div class="title">Arena Bridge</div>
+        <img src="images/soccer/arena-img.jpg" alt="arena-img">
+    </div>
+    <div class="arena-info">
+        <div class="name">Arena Bridge Arena</div>
+        <div class="date">7:30 PM, Saturday, 29 Sep 2016</div>
+    </div>
+</div>
+                    <h3>weather</h3>
+                    
+<div class="live-match-weather">
+    <div class="icon">
+        <img src="images/common/wether-sun.png" alt="wether-sun">
+    </div>	
+    <div class="info">
+        <div class="degree">7 °C</div>
+        <div class="text">Partly cloudy night</div>
+    </div>
+</div>
+                    <h3>referees</h3>
+                    
+<div class="match-lineup">
+    <div class="team-wrap">	
+        <div class="member">
+            <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avata"></a>
+            <div class="info">
+                <div class="wrap">
+                    <a href="player.html" class="name">Dylan Miller</a>
+                </div>
+                <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+            </div>
+        </div>
+    </div>
+    <div class="no-gutter">
+        <div class="col-md-6">
+            <div class="team-wrap">	
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Gavin Right</a>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+        <div class="col-md-6">
+            <div class="team-wrap">	
+                <div class="member">
+                    <a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+                    <div class="info">
+                        <div class="wrap">
+                            <a href="player.html" class="name">Gavin Righthead</a>
+                        </div>
+                        <div class="country"><img src="images/common/en-flag.png" alt="flag">Ukraine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <h3>Match details</h3>
+                    <div class="live-details">Chia celiac street art, raclette bespoke biodiesel try-hard chillwave kinfolk art party. Raclette salvia mumblecore roof party locavore. Normcore man braid snackwave. Tacos coloring book everyday carry farm-to-table forage. Chillwave vaporware la croix keytar lyft disrupt jianbing squid normcore venmo gochujang etsy. Cred tote bag retro, enamel pin put a bird on it af irony scenester.</div>
+
+                </div>
+            </div>
+        </div>	
+    </section>
+
+    <!--LIVE MATCH STAT END-->
+
+    <!--MACTH LIVE GALLERY BEGIN-->
+<section class="match-live-gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <h3>Match gallery</h3>
+            </div>
+            <div class="col-xs-6 text-right">
+                <div class="owl-carousel-arrows">
+                    <div class="custom-navigation">
+                        <a class="custom-next-btn"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                        <a class="custom-prev-btn"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="owl-carousel owl-theme gallery-slider">
+        <div class="item">
+            <a href="news-single.html">
+                <span class="info">
+                    <span class="then">24’</span>
+                    <span class="what">Fight for the ball in midfield</span>
+                </span>
+                <img src="images/soccer/gallery-slide-img.jpg" alt="gallery-slide-img">
+            </a>
+        </div>
+        <div class="item">
+            <a href="news-single.html">
+                <span class="info">
+                    <span class="then">24’</span>
+                    <span class="what">Fight for the ball in midfield</span>
+                </span>
+                <img src="images/soccer/gallery-slide-img1.jpg" alt="gallery-slide-img">
+            </a>
+        </div>
+        <div class="item">
+            <a href="news-single.html">
+                <span class="info">
+                    <span class="then">24’</span>
+                    <span class="what">Fight for the ball in midfield</span>
+                </span>
+                <img src="images/soccer/gallery-slide-img.jpg" alt="gallery-slide-img">
+            </a>
+        </div>
+        <div class="item">
+            <a href="news-single.html">
+                <span class="info">
+                    <span class="then">24’</span>
+                    <span class="what">Fight for the ball in midfield</span>
+                </span>
+                <img src="images/soccer/gallery-slide-img1.jpg" alt="gallery-slide-img">
+            </a>
+        </div>
+        <div class="item">
+            <a href="news-single.html">
+                <span class="info">
+                    <span class="then">24’</span>
+                    <span class="what">Fight for the ball in midfield</span>
+                </span>
+                <img src="images/soccer/gallery-slide-img.jpg" alt="gallery-slide-img">
+            </a>
+        </div>
+        <div class="item">
+            <a href="news-single.html">
+                <span class="info">
+                    <span class="then">24’</span>
+                    <span class="what">Fight for the ball in midfield</span>
+                </span>
+                <img src="images/soccer/gallery-slide-img1.jpg" alt="gallery-slide-img">
+            </a>
+        </div>
+    </div>
+</section>
+<!--MACTH LIVE GALLERY END-->
+
+    <!--SHARE BOX BEGIN-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="share-box">
+    <div class="item">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="title">SHARE THIS MATCH</div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 text-right">
+                    <ul class="share-socials  wpb_animate_when_almost_visible wpb_fadeInRight fadeInRight wpb_start_animation animated">                        
+
+                    <!-- Digg -->
+
+                        <li class="digg">
+                            <a href="http://www.digg.com/">
+                                <i class="fa fa-digg" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                    <!-- Facebook -->
+
+                        <li class="facebook">
+                            <a href="http://www.facebook.com/">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+    
+                    <!-- Google+ -->
+    
+                        <li class="google">
+                            <a href="https://plus.google.com/">
+                                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+    
+                    <!-- LinkedIn -->
+    
+                        <li class="linkedin">
+                            <a href="http://www.linkedin.com/">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+    
+                    <!-- Pinterest -->
+    
+                        <li class="pinterest">
+                            <a href="http://assets.pinterest.com/">
+                                <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+    
+                    <!-- Reddit -->
+    
+                        <li class="reddit">
+                            <a href="http://reddit.com/">
+                                <i class="fa fa-reddit-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+    
+                    <!-- StumbleUpon-->
+
+                        <li class="StumbleUpon">
+                            <a href="http://www.stumbleupon.com/">
+                                <i class="fa fa-stumbleupon-circle" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                    <!-- Tumblr-->
+
+                        <li class="tumbler">
+                            <a href="http://www.tumblr.com/">
+                                <i class="fa fa-tumblr-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                    <!-- Twitter -->
+
+                        <li class="twitter">
+                            <a href="https://twitter.com/">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+
+                    <!-- VK -->
+
+                        <li class="vk">
+                            <a href="http://vkontakte.ru/">
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <!--SHARE BOX END-->
+
+    <!--FOOTER BEGIN-->
+<footer class="footer">
+    <div class="wrapper-overfllow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-left">
+                        <div class="wrap">
+                            <a href="index-2.html" class="foot-logo"><img src="images/soccer/footer-logo.png" alt="footer-logo"></a>
+                            <p>Activated charcoal trust fund ugh prism af, beard marfa air plant stumptown gastropub farm-to-table jianbing.</p>
+                            <ul class="foot-left-menu">
+                                <li><a href="staff.html">First team</a></li>
+                                <li><a href="staff.html">Second team</a></li>
+                                <li><a href="amateurs.html">Amateurs</a></li>
+                                <li><a href="donations.html">Donation</a></li>
+                                <li><a href="trophies.html">trophies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-offset-1">
+                    <div class="foot-news">
+                        <h4>Recent news</h4>
+                        <div class="item">
+                            <a href="news.html" class="image"><img class="img-responsive" src="images/soccer/foot-news-img.jpg" alt="news-image"></a>
+                            <a href="news.html" class="name">When somersaulting Sanchez shouldered Mexico’s hopes</a>
+                            <a href="news.html" class="date">25 Sep 2016</a>
+                            <span class="separator">in</span>
+                            <a href="news.html" class="category">Highlights</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3 col-md-4 col-sm-12">
+                    <div class="foot-contact">
+                        <h4>Contact us</h4>
+                        <ul class="contact-list">
+                            <li><i class="fa fa-flag" aria-hidden="true"></i><span>276 Upper Parliament Street, Liverpool L8, Great Britain</span></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:team@email.com">team@email.com</a></li>
+                            <li class="phone"><i class="fa fa-phone" aria-hidden="true"></i><span>+61 3 8376 6284</span></li>
+                        </ul>
+                        <ul class="socials">
+                            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-menu-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="footer-menu">
+                        <li class="active"><a href="index-2.html"><span>Home</span></a></li>
+                        <li><a href="matches.html"><span>Matches</span></a></li>
+                        <li><a href="staff.html"><span>Team</span></a></li>
+                        <li><a href="news.html"><span>News</span></a></li>
+                        <li><a href="store.html"><span>Store</span></a></li>
+                        <li><a href="contacts.html"><span>Contact</span></a></li>
+                    </ul>	
+                    <a href="#top" class="foot-up"><span>up <i class="fa fa-caret-up" aria-hidden="true"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="copyrights">
+                        © 2017 Team - Sport club psd template
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="created">
+                        <a href="#">Created by <img src="images/common/created-icon.png" alt="create-by-image"> torbara</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--FOOTER END-->
+
+    <script type="text/javascript" src="js/library/jquery.js"></script>
+<script type="text/javascript" src="js/library/jquery-ui.js"></script>
+<script type="text/javascript" src="js/library/bootstrap.js"></script>
+<script type="text/javascript" src="js/library/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/library/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/library/jcarousel.connected-carousels.js"></script>
+<script type="text/javascript" src="js/library/owl.carousel.js"></script>
+<script type="text/javascript" src="js/library/progressbar.js"></script>
+<script type="text/javascript" src="js/library/jquery.bracket.min.js"></script>
+<script type="text/javascript" src="js/library/chartist.js"></script>
+<script type="text/javascript" src="js/library/Chart.js"></script>
+<script type="text/javascript" src="js/library/fancySelect.js"></script>
+<script type="text/javascript" src="js/library/isotope.pkgd.js"></script>
+<script type="text/javascript" src="js/library/imagesloaded.pkgd.js"></script>
+
+<script type="text/javascript" src="js/jquery.team-coundown.js"></script>
+<script type="text/javascript" src="js/matches-slider.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/matches_broadcast_listing.js"></script>
+<script type="text/javascript" src="js/news-line.js"></script>
+<script type="text/javascript" src="js/match_galery.js"></script>
+<script type="text/javascript" src="js/main-club-gallery.js"></script>
+<script type="text/javascript" src="js/product-slider.js"></script>
+<script type="text/javascript" src="js/circle-bar.js"></script>
+<script type="text/javascript" src="js/standings.js"></script>
+<script type="text/javascript" src="js/shop-price-filter.js"></script>
+<script type="text/javascript" src="js/timeseries.js"></script>
+<script type="text/javascript" src="js/radar.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/preloader.js"></script>
+<script type="text/javascript" src="js/diagram.js"></script>
+<script type="text/javascript" src="js/bi-polar-diagram.js"></script>
+<script type="text/javascript" src="js/label-placement-diagram.js"></script>
+<script type="text/javascript" src="js/donut-chart.js"></script>
+<script type="text/javascript" src="js/animate-donut.js"></script>
+<script type="text/javascript" src="js/advanced-smil.js"></script>
+<script type="text/javascript" src="js/svg-path.js"></script>
+<script type="text/javascript" src="js/pick-circle.js"></script>
+<script type="text/javascript" src="js/horizontal-bar.js"></script>
+<script type="text/javascript" src="js/gauge-chart.js"></script>
+<script type="text/javascript" src="js/stacked-bar.js"></script>
+
+<script type="text/javascript" src="js/library/chartist-plugin-legend.js"></script>
+<script type="text/javascript" src="js/library/chartist-plugin-threshold.js"></script>
+<script type="text/javascript" src="js/library/chartist-plugin-pointlabels.js"></script>
+
+<script type="text/javascript" src="js/treshold.js"></script>
+<script type="text/javascript" src="js/visible.js"></script>
+<script type="text/javascript" src="js/anchor.js"></script>
+<script type="text/javascript" src="js/landing_carousel.js"></script>
+<script type="text/javascript" src="js/landing_sport_standings.js"></script>
+<script type="text/javascript" src="js/twitterslider.js"></script>
+<script type="text/javascript" src="js/champions.js"></script>
+<script type="text/javascript" src="js/landing_mainnews_slider.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/video_slider.js"></script>
+<script type="text/javascript" src="js/footer_slides.js"></script>
+<script type="text/javascript" src="js/player_test.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+	<!--DEMO SWITCHER BEGIN-->
+<a class="demo-switcher-small-button">
+    <i class="fa fa-cog fa-spin fa-fw margin-bottom"></i>
+</a>
+<div class="demo-switcher"> 
+    <div class="switcher-header">
+        <p><i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i>demo switcher</p>
+    </div>
+    <div class="switcher-menu">
+        <div class="special-list">
+            <h3>New demos</h3>
+            <ul>
+                <li><a href="sport-championship-landing.html" data-scheme="csgo"><i class="fa fa-star" aria-hidden="true"></i>sport championship</a></li>
+                <li><a href="sport-team-landing.html" data-scheme="csgo"><i class="fa fa-star" aria-hidden="true"></i>sport team</a></li>
+                <li class="small-letter"><a href="esport-championship-landing.html" data-scheme="csgo"><i class="fa fa-star" aria-hidden="true"></i><p>eSport championship</p></a></li>
+                <li class="small-letter"><a href="esport-team-landing.html" data-scheme="csgo"><i class="fa fa-star" aria-hidden="true"></i><p>eSport team</p></a></li>
+            </ul>
+        </div>
+        <ul class="light-list demo-swith">
+            <li><a href="indexa369.html?scheme=soccer" data-scheme="soccer"><span class="soccer"></span>Soccer</a></li>
+            <li><a href="index70c2.html?scheme=amfootball" data-scheme="amfootball"><span class="football"></span>Football</a></li>
+            <li><a href="index075a.html?scheme=hockey" data-scheme="hockey"><span class="hockey"></span>Hockey</a></li>
+            <li><a href="indexc4b0.html?scheme=baseball" data-scheme="baseball"><span class="baseball"></span>Baseball</a></li>
+            <li><a href="index9439.html?scheme=basketball" data-scheme="basketball"><span class="basketball"></span>Basketball</a></li>
+        </ul>
+        <ul class="dark-list demo-swith">
+            <li><a href="index8bc9.html?scheme=csgo" data-scheme="csgo"><span class="csgo"></span>CS:GO</a></li>
+            <li><a href="indexd51a.html?scheme=dota" data-scheme="dota"><span class="dota"></span>DOTA</a></li>
+        </ul>
+    </div>
+</div>
+<!--DEMO SWITCHER END-->
+
+<script type="text/javascript" src="dev-assets/demo-switcher.js"></script>
+</body>
+
+
+<!-- Mirrored from h-team.torbara.com/match-live.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Apr 2019 19:37:15 GMT -->
+</html>

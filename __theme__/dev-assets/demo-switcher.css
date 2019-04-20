@@ -1,0 +1,188 @@
+
+.demo-switcher {
+    position: fixed;
+    top: 20%;
+    min-width: 260px;
+    left: 0;
+    z-index: 99999;
+    width: 180px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+.demo-switcher-small-button { 
+    position: fixed;
+    top: 20%;
+    left: 0;
+    z-index: 99999;
+    background: #262626;
+    width: 40px;
+    height: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .demo-switcher { 
+        top: 5%; 
+    }
+}
+
+.demo-switcher-small-button:hover {
+    background: "#ffcc00";
+    transition: all 300ms;
+}
+
+.demo-switcher-small-button .fa.fa-cog { 
+    color: #fff;
+    font-size: 15px;
+}
+.demo-switcher .switcher-header { 
+    background: #262626; 
+    padding-top: 17px; 
+    padding-bottom: 15px; 
+    border-top-right-radius: 5px;
+    z-index: 5;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid #cccccc;
+}
+.demo-switcher .switcher-header p { 
+    color: #f7f7f7; 
+    text-transform: uppercase; 
+    margin: 0px; 
+    font-family: "Montserrat"; 
+    font-size: 12px; 
+}
+.demo-switcher .switcher-header p i { 
+    color: #f7f7f7;
+    font-size: 15px;
+    margin-left: -6px;
+    margin-right: 12px;
+}
+
+.demo-switcher .switcher-menu {
+    position: relative;
+    background: #fff;
+}
+
+.demo-switcher ul li {
+    display: block;
+    width: 100%;
+    padding-bottom: 15px;
+    position: relative;
+}
+.demo-switcher .dark-list { 
+    background: #262626;
+}
+.demo-switcher .dark-list li a {
+    color: #ffffff;
+}
+.demo-switcher .special-list h3 {
+    padding: 20px 0 0 20px;
+    margin: 0px;
+    color: #afafaf;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+.demo-switcher .special-list a {
+    color: #262626;
+    padding: 7px 20px;
+    width: 100%;
+    display: block;
+    transition: all .4ms;
+}
+.demo-switcher .special-list li {
+    padding-bottom: 5px;
+}
+.demo-switcher .special-list a:hover {
+    background: linear-gradient(to left, #f0f0f0, #fff);
+}
+.demo-switcher .special-list p {
+    display: inline-block;
+    margin: 0;
+}
+.demo-switcher .special-list ul {
+    padding: 13px 0 7px 0;
+    position: relative;
+}
+.demo-switcher .special-list ul:before {
+    content: "";
+    height: 1px;
+    background: #e0e0e0;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+}
+.demo-switcher .special-list li.small-letter p:first-letter{
+    text-transform: lowercase;
+}
+.demo-switcher .special-list a i {
+    color: #ffbc00;
+    font-size: 15px;
+    padding-right: 10px;
+}
+.demo-switcher ul li a {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #141414;
+    font-size: 12px;
+    font-family: "Montserrat";
+}
+.demo-switcher ul > li > a > span {
+    height: 16px;
+    width: 14px;
+    margin-right: 10px;
+    border-radius: 3px;
+    float: left;
+    margin-top: 3.2px;
+    display: block;
+}
+.demo-switcher ul {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.demo-switcher ul li a img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 5px;
+    float: left;
+}
+.demo-switcher ul li.active a:before {
+    color: #777777;
+    content: "\f105";
+    font-family: "FontAwesome";
+    line-height: 26px;
+    position: absolute;
+    right: -2px;
+    line-height: 26px;
+}
+.demo-switcher .soccer {
+    background: linear-gradient(to right, #ffcc00, 60%, #ffa000 40% );
+}
+.demo-switcher .football {
+    background: linear-gradient(to right, #d70000, 60%, #b80000 40% );
+}
+.demo-switcher .hockey {
+    background: linear-gradient(to right, #00aeff, 60%, #1976d2 40% );
+}
+.demo-switcher .baseball {
+    background: linear-gradient(to right, #689300, 60%, #5e8208 40% );
+}
+.demo-switcher .basketball {
+    background: linear-gradient(to right, #da6100, 60%, #da4300 40% );
+}
+.demo-switcher .csgo {
+    background: linear-gradient(to right, #e69305, 60%, #c47e04 40% );
+}
+.demo-switcher .dota {
+    background: linear-gradient(to right, #b44335, 60%, #8e4426 40% );
+}
