@@ -399,6 +399,7 @@
         <form style="display: hidden" action="search-results.php" method="POST" id="form-z">
               <input type="hidden" id="data" name="data" value=""/>
               <input type="hidden" id="count" name="resultsCount" value=""/>
+              <input type="hidden" id="pDisplay" name="pDisplay" value=""/>
         </form>
 
         <!-- jQuery  -->
@@ -513,8 +514,11 @@
                   type: 'GET',
                   data : $('#form-x').serialize(),
                   success: function(response){
-                    $("#data").val(response["results"]);
-                    $("#count").val(response["count"]);
+                    console.log(JSON.parse(response));
+                    var result = JSON.parse(response);
+                    $("#data").val(result["results"]);
+                    $("#count").val(result["count"]);
+                    $("#pDisplay").val(result["display"]);
                     $("#form-z").submit();
                   }
                 });

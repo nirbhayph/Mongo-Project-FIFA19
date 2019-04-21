@@ -28,7 +28,7 @@
                   <h4 class="m-t-0 header-title">Search Results Count <span class="badge badge-primary"><?php echo $_POST["resultsCount"].$_POST["playersCount"]; ?></span></h4>
 
                   <p class="text-muted font-14 m-b-30">
-                      <b style="font-size: 15px;">Player Details </b><span class="badge badge-success"><b style="font-size: 18px;"><?php echo $_POST["playersDisplay"]; ?></b></span>
+                      <b style="font-size: 15px;">Player Details </b><span class="badge badge-success"><b style="font-size: 18px;"><?php echo $_POST["playersDisplay"].$_POST["pDisplay"]; ?></b></span>
                   </p>
 
                   <?php echo $_POST["data"]; ?>
