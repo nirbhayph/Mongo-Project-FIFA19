@@ -415,6 +415,13 @@
                     </div>
 
                     <div class="col-sm-4">
+                      <div class="card-box widget-user" style="background-color:#F9C752;">
+                          <div class="text-center">
+                              <h2 class="text-custom">
+                                <canvas id="radar-chart" width="800" height="600"></canvas>
+                              </h2>
+                          </div>
+                      </div>
                       <div class="card-box">
                           <h4 class="header-title mt-0 m-b-30">Overall Rating</h4>
 
@@ -928,6 +935,32 @@
         <!-- App js -->
         <script src="../assets/js/jquery.core.js"></script>
         <script src="../assets/js/jquery.app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script>
+        new Chart(document.getElementById("radar-chart"), {
+    type: 'radar',
+    data: {
+      labels: ["Attacking", "Skill", "Movement", "Power", "Defending", "Mentality", "Goal Keeping"],
+      datasets: [
+        {
+          label: "Cristiano Ronaldo",
+          fill: true,
+          backgroundColor: "rgba(28, 138, 226, 0.2)",
+          borderColor: "rgba(28, 138, 226,1)",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "rgba(28, 138, 226,1)",
+          data: [96,99,82,86,74,88,99]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Stats Radar'
+      }
+    }
+});
+</script>
 
     </body>
 </html>
