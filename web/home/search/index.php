@@ -54,7 +54,7 @@
 
                       <form id="form-x" role="form" action="https://pothole.ml/php/gofifa/getSearchResults.php" method="GET" data-parsley-validate>
                         <div class="row">
-                          <div class="col-xl-4">
+                          <div class="col-sm-4 col-xs-12">
                           <div class="form-group">
                               <label>Nationality</label>
                               <select id="countries" name="countries[]" class="select2 select2-multiple" multiple="multiple" multiple data-placeholder="Select or enter one or more country name(s)">
@@ -134,6 +134,8 @@
                                 <input name="releaseClause" class="form-control"  type="text range" min="0"
                                        max="600000000" placeholder="Release Clause"/>
                         </div>
+
+
                         <h4> Attacking </h4>
                         <div class="form-group row">
                                 <label for="crossing" class="col-sm-2 control-label"><b>Crossing</b></label>
@@ -165,7 +167,8 @@
                                     <input type="text" name="volleys" class="stats">
                                 </div>
                         </div>
-
+                      </div>
+                      <div class="col-sm-4 col-xs-12">
                         <h4> Skill </h4>
                         <div class="form-group row">
                                 <label for="dribbling" class="col-sm-2 control-label"><b>Dribbling</b></label>
@@ -199,8 +202,6 @@
                         </div>
 
 
-                        </div>
-                        <div class="col-xl-4">
                     <h4> Movement </h4>
                     <div class="form-group row">
                             <label for="acceleration" class="col-sm-2 control-label"><b>Accel..</b></label>
@@ -266,6 +267,29 @@
                   </div>
 
 
+                                    <h4> Defending </h4>
+                                    <div class="form-group row">
+                                            <label for="marking" class="col-sm-2 control-label"><b>Marking</b></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="marking" class="stats">
+                                            </div>
+                                    </div>
+                                    <div class="form-group row">
+                                            <label for="standT" class="col-sm-2 control-label"><b>Standing Tackle</b></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="standT" class="stats">
+                                            </div>
+                                    </div>
+                                    <div class="form-group row">
+                                            <label for="slideT" class="col-sm-2 control-label"><b>Sliding Tackle</b></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="slideT" class="stats">
+                                            </div>
+                                    </div>
+
+
+                                    </div>
+                                    <div class="col-sm-4 col-xs-12">
                   <h4> Mentality </h4>
                   <div class="form-group row">
                           <label for="aggression" class="col-sm-2 control-label"><b>Aggress..</b></label>
@@ -305,25 +329,6 @@
                   </div>
 
 
-                  <h4> Defending </h4>
-                  <div class="form-group row">
-                          <label for="marking" class="col-sm-2 control-label"><b>Marking</b></label>
-                          <div class="col-sm-10">
-                              <input type="text" name="marking" class="stats">
-                          </div>
-                  </div>
-                  <div class="form-group row">
-                          <label for="standT" class="col-sm-2 control-label"><b>Standing Tackle</b></label>
-                          <div class="col-sm-10">
-                              <input type="text" name="standT" class="stats">
-                          </div>
-                  </div>
-                  <div class="form-group row">
-                          <label for="slideT" class="col-sm-2 control-label"><b>Sliding Tackle</b></label>
-                          <div class="col-sm-10">
-                              <input type="text" name="slideT" class="stats">
-                          </div>
-                  </div>
 
                     <h4> GoalKeeping </h4>
                     <div class="form-group row">
@@ -356,8 +361,6 @@
                                 <input type="text" name="gkr" class="stats">
                             </div>
                     </div>
-                  </div>
-                    <div class="col-xl-4">
                     <div class="form-group">
                       <label>International Reputation</label>
                       <select id="iReputation" name="iReputation[]" class="select2 select2-multiple" multiple="multiple" multiple data-placeholder="International Reputation(s)">
@@ -367,96 +370,6 @@
                       <label>Real Face </label>
                       <select id="rFace" name="rFace[]" class="select2 select2-multiple" multiple="multiple" multiple data-placeholder="Real Face(s)">
                       </select>
-                    </div>
-                    <div class="form-group row">
-                            <label for="ls_st_rs" class="col-sm-2 control-label"><b>LS ST RS</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="ls_st_rs" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="lw_rw" class="col-sm-2 control-label"><b>LW RW</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="lw_rw" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="lf_cf_rf" class="col-sm-2 control-label"><b>LF CF RF</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="lf_cf_rf" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="lam_cam_ram" class="col-sm-2 control-label"><b>LAM CAM RAM</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="lam_cam_ram" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="lm_rm" class="col-sm-2 control-label"><b>LM RM</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="lm_rm" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="ldm_cm_rcm" class="col-sm-2 control-label"><b>LDM CM RCM</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="ldm_cm_rcm" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="lcb_cb_rcb" class="col-sm-2 control-label"><b>LCB CB RCB</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="lcb_cb_rcb" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="lb_rb" class="col-sm-2 control-label"><b>LB RB</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="lb_rb" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="lwb_rwb" class="col-sm-2 control-label"><b>LWB RWB</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="lwb_rwb" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="pac" class="col-sm-2 control-label"><b>PAC</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="pac" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="sho" class="col-sm-2 control-label"><b>SHO</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="sho" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="pas" class="col-sm-2 control-label"><b>PAS</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="pas" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="dry" class="col-sm-2 control-label"><b>DRY</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="dry" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="def" class="col-sm-2 control-label"><b>DEF</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="def" class="stats">
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                            <label for="phy" class="col-sm-2 control-label"><b>PHY</b></label>
-                            <div class="col-sm-10">
-                                <input type="text" name="phy" class="stats">
-                            </div>
                     </div>
                   </div>
                       </div>
