@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>Adminto - Responsive Bootstrap 4 Admin Dashboard Template v2.0 | Coderthemes</title>
+
+	<!-- Google-Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic' rel='stylesheet'>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/prettify.css" />
+
+	<!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Adminto Documentation 2.0</a>
+			</div>
+
+			<!--div><a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a></div-->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div id="wrapper">
+
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li>
+					<a href="#intro">Introduction</a>
+				</li>
+				<li>
+					<a href="#structure">Structure</a>
+				</li>
+				<li>
+					<a href="#utilities">Utilities</a>
+				</li>
+				<li>
+					<a href="#credits">Plugins &amp; Resources (Credits)</a>
+				</li>
+				<li>
+					<a href="#support">Support</a>
+				</li>
+				<li><a href="#changelog">Change Log</a></li>
+			</ul>
+		</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="right-bar">
+
+							<div  class="com-container">
+
+								<div id="intro" class="com-container">
+									<h3 class="page-header">Thank you very much for your purchase!</h3>
+									<div class="p-t-20">
+											<div class="alert alert-info alert-dismissable">
+												<p>If you have any questions that are beyond the scope of this documentation, please feel free to email or contact us via my page.</p>
+											</div>
+									</div>
+								</div>
+
+								<h4 class="page-header">Introduction</h4>
+
+								<p>Adminto is a bootstrap based premium admin template. It has super clean user interface, customizable components and widgets and three different color schemes. It is fully responsive and easy to customize. The code is super easy to understand and gives power to any developer to turn this theme into real web application.
+								</p>
+								<p>
+									We really care for our buyers and so in case if you have any question or feedback, please feel free to get back to us.
+								</p>
+
+
+
+									<div id="structure" class="com-container">
+										<h4 class="page-header">Structure</h4>
+										<p>I have tried to follow the standards and modular structure while developing the theme. Following sections are explaining the theme File &amp; Folder, structure, html file struture and plugins.</p>
+
+										<div class="row p-t-20">
+											<div class="col-sm-12">
+												<h4>File &amp; Folder Structure</h4>
+												<hr/>
+
+												<pre class="prettyprint">
+
+├── html files
+Src/assets/
+├── scss/
+│   └── All SCSS files
+├── css/
+│   └── All css files.
+├── fonts/
+├── pages/
+│   └── All the pages related scripts
+├── images/
+│   └── All images
+├── plugins/
+│   └── The plugins files - which are not available through bower
+└── js/
+    └── All common Javascripts files
+
+</pre>
+										
+
+											<div class="row">
+												<div class="col-sm-12 p-t-30">
+													<h4>HTML Structure</h4>
+													<hr/>
+													<p>
+														<iframe src="html_str.html" width="100%" height="1040" style="border: none"></iframe>
+													</p>
+												</div>
+											</div>
+
+											<div class="col-sm-12 p-t-30">
+												<h4>CSS &amp; SCSS</h4>
+												<hr/>
+												
+												<p class="m-t-20">
+                                                    Scss is a CSS pre-processor and it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable. Scss runs inside Node, in the browser and inside Rhino.
+                                                </p>
+                                                <p>
+                                                    All the css files are pre-compiled using scss compiler and provided inside the <code>assets/css/</code> folder. In case if you are not familiar with scss or
+                                                    don't have any environment setup which can be used to compile the scss files, then you can use these CSS files directly.
+                                                    But if you are familiar with scss, then I'll suggest you to use the scss files.
+                                                </p>
+                                                <p>Files are explained below: </p>
+
+                                                <table class="table table-bordered m-0">
+													<thead>
+														<tr>
+															<th style="width: 20%;"><i class="ti-file"></i> File</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+                                                                <code>bootstrap.css</code>
+                                                            </td>
+                                                            <td>
+                                                                Adminto uses the bootstrap v4.1.0. The core bootstrap file is being used in all the pages.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>core.scss</code>/<code>core.css</code>
+                                                            </td>
+                                                            <td>
+                                                                This file is containing all common styles for all the pages.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>pages.scss</code>/<code>pages.css</code>
+                                                            </td>
+                                                            <td>
+                                                                Pages contains the styles for all supported third-party JS/CSS plugins. It has overwritten version of styles.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>components.scss</code>/<code>components.css</code>
+                                                            </td>
+                                                            <td>
+                                                                This is the one of the core and important file. It contains the styles for all the components, ui elements, and some other parts of the theme.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>responsive.scss</code>/<code>responsive.css</code>
+                                                            </td>
+                                                            <td>
+                                                                This file is containing the styles related to responsiveness support.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>icons.scss</code>/<code>icons.css</code>
+                                                            </td>
+                                                            <td>
+                                                                Combines various font icons. You should remove the fonts you don't plan to use from this file and recompile it.
+                                                            </td>
+														</tr>
+
+														<tr>
+															<td>
+                                                                <code>menu_dark.scss</code>
+                                                            </td>
+                                                            <td>
+                                                                Every version includes this scss file. By default it's having a light sidebar menu. If you would like to have a dark sidebar, please include this file in main scss file and recompiled it.
+                                                            </td>
+														</tr>
+
+														<tr>
+															<td>
+                                                                <code>style.scss</code>/<code>style.css</code>
+                                                            </td>
+                                                            <td>
+                                                                This is main style file. The scss version is importing all the custom scss files. Each of the scss file is containing style for
+                                                                speicic element. E.g Buttons, checkbox, icons, forms, etc.
+                                                            </td>
+														</tr>
+														<tr>
+															<td>
+                                                                <code>style_dark.scss</code>/<code>style_dark.css</code>
+                                                            </td>
+                                                            <td>
+                                                                If you would like to have a dark sidebar(dark background), please include this file. Remove the style.css from it.
+                                                            </td>
+														</tr>
+														
+
+                                                    </tbody>
+                                                </table>
+
+                                                
+											</div>
+										</div>
+
+										<div class="col-sm-12 p-t-30">
+												<h4>Javascript</h4>
+												<hr/>
+												<p class="m-t-20">
+                                                    Adminto uses jQuery, Bootstrap JS framework(at its core) and some of the third-party plugins. There are may more third party plugin which you can use according to your needs. The css is already containing matching style for these plugins so you will not need to do anything around it.
+                                                </p>
+
+                                                <p>Files are explained below: </p>
+
+                                                <table class="table table-bordered m-0">
+													<thead>
+														<tr>
+															<th style="width: 20%;"><i class="ti-file"></i> File</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+                                                                <code>jquery.js</code>, <code>bootstrap.js</code>,
+                                                                <code>jquery.nicescroll</code>, <code>jquery.slimscroll</code>, etc.
+                                                                <!-- TODO -->
+
+                                                            </td>
+                                                            <td>
+                                                                These files are used at core of the theme.
+                                                            </td>
+														</tr>
+                                                        <tr>
+															<td>
+                                                                <code>jquery.app.js</code>
+                                                            </td>
+                                                            <td>
+                                                                This is a main js file. It contains the custom JS code needed for features including
+                                                                layout, sidebar, etc.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>jquery.core.js</code>
+                                                            </td>
+                                                            <td>
+                                                                This file contains the definition of some of the key components (e.g. notifications, portlet, etc) and code
+                                                                (for self-initialization) related to some of the controls (e.g. modal, range-slider, switchery, multiselect, etc)
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>pages/*.js</code>
+                                                            </td>
+                                                            <td>
+                                                                These are the files containing pages specific code. They are mainly used for demo purpose.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>plugins/**.js</code>
+                                                            </td>
+                                                            <td>
+                                                                All supported and integrated third-party plugins are included in here.
+                                                            </td>
+														</tr>
+                                                    </tbody>
+                                                </table>
+											</div>
+
+									</div>
+
+
+									<h4 style="margin-bottom: 30px;"><b>Plugin's usage information</b></h4>
+
+									<table class="table table-bordered m-0">
+                                                    
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Page</th>
+                                                            <th>Plugin CSS</th>
+                                                            <th>Plugin js</th>
+                                                            <th>Custom js</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    	<tr>
+                                                            <td>ui-draggable-cards.html</td>
+                                                            <td>jquery-ui.min.css</td>
+                                                            <td>jquery-ui.min.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ui-modal.html</td>
+                                                            <td>custombox.min.css</td>
+                                                            <td>custombox.min.js , legacy.min.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ui-notification.html</td>
+                                                            <td>toastr.min.css</td>
+                                                            <td>toastr.min.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ui-range-sliders.html</td>
+                                                            <td>ion.rangeSlider.css , ion.rangeSlider.skinFlat.css </td>
+                                                            <td>ion.rangeSlider.min.js</td>
+                                                            <td>jquery.ui-sliders.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>ui-sweet-alert.html</td>
+                                                            <td>sweet-alert.css</td>
+                                                            <td>sweet-alert.min.js</td>
+                                                            <td>jquery.sweet-alert.init.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>ui-treeview.html</td>
+                                                            <td>jstree/style.css</td>
+                                                            <td>jstree.min.js</td>
+                                                            <td>jquery.tree.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>components-sweet-alert.html</td>
+                                                            <td>sweetalert.css</td>
+                                                            <td>sweetalert.min.js</td>
+                                                            <td>jquery.sweet-alert.init.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>form-advanced.html</td>
+                                                            <td>bootstrap-tagsinput.css , switchery.min.css , multi-select.css , select2.css , jquery.bootstrap-touchspin.min.css,bootstrap-timepicker.min.css , bootstrap-colorpicker.min.css , bootstrap-datepicker.min.css , daterangepicker.css</td>
+                                                            <td>bootstrap-tagsinput.min.js , switchery.min.js , jquery.multi-select.js , jquery.quicksearch.js , select2.min.js, bootstrap-select.min.js , bootstrap-filestyle.min.js , jquery.bootstrap-touchspin.min.js , bootstrap-maxlength.min.js,moment.js , bootstrap-timepicker.min.js , bootstrap-colorpicker.min.js , bootstrap-datepicker.min.js , daterangepicker.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>form-validation.html</td>
+                                                            <td>-</td>
+                                                            <td>parsley.min.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>form-wizard.html</td>
+                                                            <td>-</td>
+                                                            <td>jquery.validate.min.js,jquery.bootstrap.wizard.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>form-wysiwig.html</td>
+                                                            <td>-</td>
+                                                            <td>tinymce.min.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>form-uploads.html</td>
+                                                            <td>dropify.min.css</td>
+                                                            <td>dropify.min.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>form-xeditable.html</td>
+                                                            <td>bootstrap-editable.css</td>
+                                                            <td>bootstrap-editable.min.js</td>
+                                                            <td>jquery.xeditable.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>tables-datatable.html</td>
+                                                            <td>jquery.dataTables.min.css,buttons.bootstrap.min.css,fixedHeader.bootstrap.min.css,responsive.bootstrap.min.css,scroller.bootstrap.min.css</td>
+                                                            <td>jquery.dataTables.min.js , dataTables.bootstrap.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>tables-responsive.html</td>
+                                                            <td>rwd-table.min.css</td>
+                                                            <td>rwd-table.min.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>tables-editable.html</td>
+                                                            <td>magnific-popup.css , datatables.css </td>
+                                                            <td>jquery.magnific-popup.min.js , jquery.dataTables.js , dataTables.bootstrap.js , mindmup-editabletable.js , numeric-input-example.js </td>
+                                                            <td>datatables.editable.init.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>chart-flot.html</td>
+                                                            <td>-</td>
+                                                            <td>jquery.flot.js , jquery.flot.time.js , jquery.flot.tooltip.min.js , jquery.flot.resize.js , jquery.flot.pie.js , jquery.flot.selection.js , jquery.flot.stack.js , jquery.flot.orderBars.min.js , jquery.flot.crosshair.js</td>
+                                                            <td>jquery.flot.init.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>chart-morris.html</td>
+                                                            <td>morris.css</td>
+                                                            <td>morris.min.js , raphael-min.js</td>
+                                                            <td>morris.init.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>chart-chartist.html</td>
+                                                            <td>chartist.min.css</td>
+                                                            <td>chartist.min.js</td>
+                                                            <td>jquery.chartist.init.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>chart-chartjs.html</td>
+                                                            <td>-</td>
+                                                            <td>chart.min.js</td>
+                                                            <td>jquery.chartjs.init.js</td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td>chart-other.html</td>
+                                                            <td>jquery.circliful.css,</td>
+                                                            <td> jquery.peity.min.js,jquery.sparkline.min.js , jquery.knob.js , jquery.circliful.min.js</td>
+                                                            <td>jquery.other-charts.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>calendar.html</td>
+                                                            <td>fullcalendar.css , select2.css</td>
+                                                            <td>jquery-ui.min.js , select2.min.js , moment.js , fullcalendar.min.js</td>
+                                                            <td>jquery.fullcalendar.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>extras-tour.html</td>
+                                                            <td>hopscotch.min.css</td>
+                                                            <td> hopscotch.min.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>extras-taskboard.html</td>
+                                                            <td>dragula.min.css</td>
+                                                            <td> dragula.min.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>extras-maps.html</td>
+                                                            <td>jquery-jvectormap-2.0.2.css</td>
+                                                            <td>gmaps.min.js,jquery-jvectormap-2.0.2.min.js , jquery-jvectormap-world-mill-en.js , gdp-data.js , jquery-jvectormap-us-aea-en.js" , jquery-jvectormap-uk-mill-en.js , jquery-jvectormap-au-mill.js , jquery-jvectormap-us-il-chicago-mill-en.js , jquery-jvectormap-ca-lcc.js , jquery-jvectormap-de-mill.js , jquery-jvectormap-in-mill.js , jquery-jvectormap-asia-mill.js</td>
+                                                            <td>jvectormap.init.js, jquery.gmaps.js</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>extras-coming-soon.html</td>
+                                                            <td>-</td>
+                                                            <td>jquery.lwtCountdown-1.0.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>extra-gallery.html</td>
+                                                            <td>magnific-popup.css</td>
+                                                            <td>isotope.pkgd.min.js" , jquery.magnific-popup.min.js</td>
+                                                            <td>-</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+								
+									
+
+										<div id="utilities" class="com-container">
+											<h4 class="page-header">Utilities</h4>
+											<p>The theme contains various utilies including some helper classes, widgets, etc. Please see below some helper classes.</p>
+
+											<p><b>Helper Classes:</b></p>
+											<table class="table table-bordered m-0">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Class</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><b>.p-0</b>
+                                                        </td>
+                                                        <td>Removes all padding space</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.p-20</b>
+                                                        </td>
+                                                        <td>Adds 20px padding</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.p-30</b>
+                                                        </td>
+                                                        <td>Adds 30px padding</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.p-t-0</b></td>
+                                                        <td>Remove top padding</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.p-t-10</b></td>
+                                                        <td>Adds 10px top padding</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.p-b-10</b></td>
+                                                        <td>Adds 10px bottom padding</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.p-l-0</b></td>
+                                                        <td>Remove left 0px padding</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.p-r-0</b></td>
+                                                        <td>Remove right 0px padding</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.p-l-r-10</b></td>
+                                                        <td>Adds 10px left and right padding</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-0</b></td>
+                                                        <td>Remove all margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-r-5</b></td>
+                                                        <td>Adds 5px right margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-r-10</b></td>
+                                                        <td>Adds 10px right margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-r-15</b></td>
+                                                        <td>Adds 15px right margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-l-10</b></td>
+                                                        <td>Adds 10px left margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-l-15</b></td>
+                                                        <td>Adds 15px left margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-t-0</b></td>
+                                                        <td>Remove top margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-t-10</b></td>
+                                                        <td>Adds 10px top margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-t-15</b></td>
+                                                        <td>Adds 15px top margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-t-20</b></td>
+                                                        <td>Adds 20px top margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-t-30</b></td>
+                                                        <td>Adds 30px top margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-t-40</b></td>
+                                                        <td>Adds 40px top margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-b-0</b></td>
+                                                        <td>Remove bottom margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-b-10</b></td>
+                                                        <td>Adds 10px bottom margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-b-15</b></td>
+                                                        <td>Adds 15px bottom margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-b-30</b></td>
+                                                        <td>Adds 30px bottom margin</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.w-xs</b></td>
+                                                        <td>Minimum width 80px</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.w-sm</b></td>
+                                                        <td>Minimum width 95px</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.w-md</b></td>
+                                                        <td>Minimum width 110px</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.w-lg</b></td>
+                                                        <td>Minimum width 140px</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.b-0</b></td>
+                                                        <td>Removes all borders</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.w-xs</b></td>
+                                                        <td>minimum width 80px</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.w-sm</b></td>
+                                                        <td>minimum width 95px</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.w-md</b></td>
+                                                        <td>minimum width 110px</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.w-lg</b></td>
+                                                        <td>minimum width 140px</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-h-40</b></td>
+                                                        <td>minimum height 40px</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.m-h-50</b></td>
+                                                        <td>minimum height 50px</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.font-normal</b></td>
+                                                        <td>font normal</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.font-600</b></td>
+                                                        <td>font weight 600</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.font-bold</b></td>
+                                                        <td>font weight 700</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.font-light</b></td>
+                                                        <td>font weight 300</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b>.font-13</b></td>
+                                                        <td>font size 13px</td>
+                                                    </tr>
+
+                                                    
+
+                                                    </tbody>
+                                                </table>
+										</div>
+
+
+										
+
+
+										<div id="credits" class="com-container">
+											<h4 class="page-header">Credits &amp; Official Documentation</h4>
+											<p>We've used the following resources as listed. These are some awesome creation and we are thankful to the community.</p>
+
+											<ul class="">
+								                <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+								                <li><a href="https://jquery.com/">Jquery</a></li>
+								                <li><a href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a></li>
+								                <li><a href="http://zavoloklom.github.io/material-design-iconic-font/index.html">Material Design Icons</a></li>
+								                <li><a href="http://lipis.github.io/bootstrap-sweetalert/">Sweet-Alert</a></li>
+								                <li><a href="http://www.codrops.com">Codrops</a></li>
+								                <li><a href="http://areaaperta.com/nicescroll/">Nicescroll</a></li>
+								                <li><a href="http://arshaw.com/fullcalendar/">Full Calendar</a></li>
+								                <li><a href="https://github.com/xoxco/jQuery-Tags-Input">Tags Input</a></li>
+								                <li><a href="http://jdewit.github.com/bootstrap-timepicker">Bootstrap-timepicker</a></li>
+								                <li><a href="http://www.eyecon.ro/bootstrap-colorpicker">Bootstrap Colorpicker</a></li>
+								                <li><a href="http://loudev.com/">Multi-select</a></li>
+								                <li><a href="https://select2.github.io/">Select2</a></li>
+								                <li><a href="http://bootstrapvalidator.com">Bootstrapvalidator</a></li>
+								                <li><a href="https://github.com/xing/wysihtml5">Wysihtml5</a></li>
+								                <li><a href="https://github.com/JeremyFagis/dropify">Dropify</a></li>
+								                <li><a href="https://www.datatables.net">Datatables</a></li>
+								                <li><a href="http://morrisjs.github.io/morris.js/">Morris</a></li>
+								                <li><a href="http://benpickles.github.io/peity">Peity Chart</a></li>
+								                <li><a href="http://omnipotent.net/jquery.sparkline/">Sparkline</a></li>
+								                <li><a href="https://github.com/aterrien/jQuery-Knob">JQuery-Knob</a></li>
+								                <li><a href="https://hpneo.github.io/gmaps/">Gmaps</a></li>
+								                <li><a href="http://jqvmap.com">Vector Maps</a></li>
+								                <li><a href="http://uifaces.com/">Uifaces (images)</a></li>
+								                <li><a href="https://unsplash.com/">Unsplash (images)</a></li>
+								                <li><a href="http://www.flotcharts.org/">Flot-charts</a></li>
+								                <li><a href="http://ionden.com/">Ion-Slider</a></li>
+								                <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific-popup</a></li>
+								                <li><a href="http://isotope.metafizzy.co">Isotope</a></li>
+								                <li><a href="http://www.charlesmudy.com/respmail/">Email-template</a></li>
+								                <li><a href="http://www.littlewebthings.com/projects/countdown/">Countdown</a></li>
+								                <li><a href="https://github.com/fians/Waves">Waves Effect</a></li>
+								                <li><a href="http://codepen.io/">Codepen</a></li>
+								                <li><a href="http://flatlogic.github.io/awesome-bootstrap-checkbox/demo/"> Checkbox and radio</a></li>
+								                <li><a href="http://dixso.github.io/custombox/">Custom Box</a></li>
+								                <li><a href="http://abpetkov.github.io/switchery/">Switchery</a></li>
+								                <li><a href="https://github.com/istvan-ujjmeszaros/bootstrap-touchspin">Bootstrap touchspin</a></li>
+								                <li><a href="http://jdewit.github.io/bootstrap-timepicker/">Timepicker</a></li>
+								                <li><a href="https://bootstrap-datepicker.readthedocs.org/en/latest/">Datepicker</a></li>
+								                <li><a href="https://github.com/dangrossman/bootstrap-daterangepicker">Daterangepicker</a></li>
+								                <li><a href="http://parsleyjs.org/">Parsleyjs (Form validation)</a></li>
+								                <li><a href="http://github.com/VinceG/twitter-bootstrap-wizard">Bootstrap wizard</a></li>
+								                <li><a href="https://www.tinymce.com/">Tinymce</a></li>
+								                <li><a href="https://gionkunz.github.io/chartist-js/">Chartist</a></li>
+								                <li><a href="https://www.jstree.com/">jstree</a></li>
+								                <li><a href="https://github.com/bevacqua/dragula">Dragula</a></li>
+								                <li><a href="https://github.com/linkedin/hopscotch/find/master">hopscotch</a></li>
+								                <li><a href="http://www.chartjs.org/">Chartjs</a></li>
+								                <li><a href="http://gergeo.se/RWD-Table-Patterns/">Responsive Table</a></li>
+								                
+								            </ul>
+										</div>
+
+										<div id="support" class="com-container">
+											<h4 class="page-header">Support</h4>
+											<p class="m-t-20">
+                                                    Once again thank you for your purchase. I'll be happy to answer the the questions you have related to the theme.
+                                                    In case if you have any suggestion or feature, request please feel free to contact me, I'll try to implement it and will release as part of future updates.
+                                                </p>
+
+                                                <p>
+                                                    Stay Awesome!
+                                                </p>
+                                                <p class="text-primary">
+                                                    - <strong>Coderthemes</strong>
+                                                </p>
+										</div>
+
+										<div id="changelog" class="com-container">
+
+											<h4 class="page-header">Changelog</h4>
+
+											<p style="margin-top: 20px;"><strong  style="text-decoration: underline; font-weight: 900;">Version 2.0.0 </strong> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 27 April 2018</small></p>
+											
+											<ul>
+												<li>
+													Update Bootstrap to v4.1.0
+												</li>
+												<li>Added Dark layouts (Horizontal & Vertical)</li>
+												<li>
+													Updated plugins:
+
+													<ul>
+														<li>Morris chart v0.5.0 to v0.5.1</li>
+														<li>CounterUp v1.0 to v2.0</li>
+														<li>Ion rangeslider v2.0.1 to v2.2.0</li>
+														<li>Bootstrap taginput v0.5.0 to v0.8.0</li>
+														<li>Select 2 v3.4.8 to v4.0.5</li>
+														<li>Bootstrap touchspin v3.0.1 to v3.1.2</li>
+														<li>Parslayjs v2.1.3 to v2.8.1</li>
+														<li>Bootstrap wizard v1.0.0 to v1.4.2</li>
+														<li>Dropify v0.2.0 to v0.2.1</li>
+														<li>Responsive table v5.0.4 to v5.3.2</li>
+														<li>Flot chart v0.8.1 to v0.8.3</li>
+														<li>Chartist chart v0.9.4 to v0.11.0</li>
+														<li>Chartjs v2.1.4 to v2.7.1</li>
+														<li>Peity chart v3.2.0 to v3.3.0</li>
+														<li>Full Calendar v2.9.0 to 3.9.0</li>
+													</ul>
+												</li>
+												<li>Added new datatables</li>
+											</ul>
+
+											<p style="margin-top: 20px;"><strong  style="text-decoration: underline; font-weight: 900;">Version 1.6.0 </strong> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 12 December 2017</small></p>
+											
+											<ul>
+												<li>
+													Update bootstrap 4.beta-2 version(Light and Horizontal).
+												</li>
+											</ul>
+
+											<p style="margin-top: 20px;"><strong  style="text-decoration: underline; font-weight: 900;">Version 1.5.0 </strong> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 06 February 2017</small></p>
+											
+											<ul>
+												<li>
+													Update font-awesome to 4.7.0
+												</li>
+												<li>
+													Added landing page(One page) template
+												</li>
+												<li>
+													Added tablesaw table page
+												</li>
+												<li>
+													Added dripicons icons page
+												</li>
+												<li>
+													Fixed issues related to responsiveness
+												</li>
+											</ul>
+
+											<p style="margin-top: 20px;"><strong  style="text-decoration: underline; font-weight: 900;">Version 1.4.0 </strong> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 25 August 2016</small></p>
+											
+											<ul>
+												<li>
+													Update bootstrap to 3.3.7
+												</li>
+												<li>
+													Added RTL version for Horizontal layout
+												</li>
+												<li>
+													Added RTL version for Vertical layout
+												</li>
+											</ul>
+
+											<p style="margin-top: 20px;"><strong  style="text-decoration: underline; font-weight: 900;">Version 1.3.0 </strong> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 14 Jun 2016</small></p>
+											
+											<ul>
+												<li>
+													Added draggable cards
+												</li>
+												<li>
+													Added responsive table page
+												</li>
+												<li>
+													Added chartjs 2.0 charts page
+												</li>
+												<li>Fixed issues related to responsiveness</li>
+											</ul>
+
+
+											<p style="margin-top: 20px;"><strong  style="text-decoration: underline; font-weight: 900;">Version 1.2.0 </strong> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 20 April 2016</small></p>
+											
+											<ul>
+												<li>
+													Added email page
+												</li>
+												<li>
+													Added profile page
+												</li>
+												<li>Fixed issues related to responsiveness</li>
+											</ul>
+
+											<p style="margin-top: 20px;"><strong  style="text-decoration: underline; font-weight: 900;">Version 1.1.0 </strong> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 15 March 2016</small></p>
+											
+											<ul>
+												<li>
+													Added new layout with horizontal menu
+												</li>
+											</ul>
+
+
+											<p style="margin-top: 20px;"><strong  style="text-decoration: underline; font-weight: 900;">Version 1.0.0 </strong> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 01 March 2016</small></p>
+											
+											<ul>
+												<li>
+													Initial released
+												</li>
+											</ul>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /#page-content-wrapper -->
+
+					<div class="text-center">
+						<p class="copy">Copyright © 2016 - 2018 Adminto.</p>
+					</div>
+				</div>
+				<!-- /#wrapper -->
+
+				<!-- jQuery -->
+				<script src="js/jquery.js"></script>
+
+				<!-- Bootstrap Core JavaScript -->
+				<script src="js/bootstrap.min.js"></script>
+
+				<script src="js/jquery.easing.min.js"></script>
+
+				<script type="text/javascript" src="js/prettify.js"></script>
+
+				<!-- Menu Toggle Script -->
+				<script>
+
+					//jQuery for page scrolling feature - requires jQuery Easing plugin
+					$(function() {
+					    $('.sidebar-nav a').bind('click', function(event) {
+					        var $anchor = $(this);
+					        $('html, body').stop().animate({
+					            scrollTop: $($anchor.attr('href')).offset().top - 100
+					        }, 1500, 'easeInOutExpo');
+					        event.preventDefault();
+					    });
+					});
+				</script>
+
+			</body>
+
+			</html>
