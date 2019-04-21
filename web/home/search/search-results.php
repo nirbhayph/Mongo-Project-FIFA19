@@ -25,7 +25,7 @@
       <div class="row">
           <div class="col-12">
               <div class="card-box table-responsive">
-                  <h4 class="m-t-0 header-title">Search Results Count <span class="badge badge-primary"><?php echo $_POST["resultsCount"].$_POST["playersCount"]; ?></span></h4>
+                  <h4 class="m-t-0 header-title">Search Results Count <span class="badge badge-primary"><b style="font-size: 18px;"><?php echo $_POST["resultsCount"].$_POST["playersCount"]; ?></b></span></h4>
 
                   <p class="text-muted font-14 m-b-30">
                       <b style="font-size: 15px;">Player Details </b><span class="badge badge-success"><b style="font-size: 18px;"><?php echo $_POST["playersDisplay"].$_POST["pDisplay"]; ?></b></span>
