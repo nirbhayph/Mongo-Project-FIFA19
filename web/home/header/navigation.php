@@ -27,9 +27,9 @@
                             </a>
                         </li>
                         <li>
-                            <form class="app-search" style="width:300%;">
-                                <input type="text" placeholder="Player Search ..."
-                                class="form-control">
+                            <form id="form-m" class="app-search" style="width:300%;">
+                                <input name="player_text" type="text" placeholder="Player Search ..."
+                                class="form-control" autocomplete="off">
                                 <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </li>
@@ -103,5 +103,31 @@
         </div> <!-- end #navigation -->
     </div> <!-- end container -->
 </div> <!-- end navbar-custom -->
+<form style="display: hidden" action="search-results.php" method="POST" id="form-r">
+      <input type="hidden" id="playerDetails" name="data_player" value=""/>
+      <input type="hidden" id="countP" name="playersCount" value=""/>
+      <input type="hidden" id="queryP" name="playersDisplay" value=""/>
+</form>
 </header>
         <!-- End Navigation Bar-->
+<script src="../assets/js/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function() {
+  $('#form-m').submit(function(){
+      $.ajax({
+        url: 'https://pothole.ml/php/gofifa/getSearchResults.php',
+        type: 'GET',
+        data : $('#form-m').serialize(),
+        success: function(result){
+          var response = JSON.parse(result);
+          $("#playerDetails").val(response["results"]);
+          $("#countP").val(response["count"]);
+          $("#queryP").val(response["display"]);
+          $("#form-r").submit();
+        }
+      });
+      return false;
+  });
+
+});
+</script>

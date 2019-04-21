@@ -25,13 +25,14 @@
       <div class="row">
           <div class="col-12">
               <div class="card-box table-responsive">
-                  <h4 class="m-t-0 header-title">Search Results Count <span class="badge badge-primary"><?php echo $_GET["resultsCount"]; ?></span></h4>
+                  <h4 class="m-t-0 header-title">Search Results Count <span class="badge badge-primary"><?php echo $_POST["resultsCount"].$_POST["playersCount"]; ?></span></h4>
 
                   <p class="text-muted font-14 m-b-30">
-                      <b>Player Details</b>
+                      <b style="font-size: 15px;">Player Details </b><span class="badge badge-success"><b style="font-size: 18px;"><?php echo $_POST["playersDisplay"]; ?></b></span>
                   </p>
 
                   <?php echo $_POST["data"]; ?>
+                  <?php echo $_POST["data_player"]; ?>
               </div>
           </div>
       </div> <!-- end row -->

@@ -485,6 +485,7 @@
 
         <form style="display: hidden" action="search-results.php" method="POST" id="form-z">
               <input type="hidden" id="data" name="data" value=""/>
+              <input type="hidden" id="count" name="resultsCount" value=""/>
         </form>
 
         <!-- jQuery  -->
@@ -599,12 +600,14 @@
                   type: 'GET',
                   data : $('#form-x').serialize(),
                   success: function(response){
-                    $("#data").val(response);
+                    $("#data").val(response["results"]);
+                    $("#count").val(response["count"]);
                     $("#form-z").submit();
                   }
                 });
                 return false;
             });
+
 
         </script>
     </body>
