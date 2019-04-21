@@ -52,7 +52,7 @@
                   <div class="card-box" id="custom-search" style="display:none">
                       <h4 class="m-t-0 m-b-30 header-title">Search on any of the player parameters</h4>
 
-                      <form role="form" action="https://pothole.ml/php/gofifa/getSearchResults.php" method="GET" data-parsley-validate>
+                      <form id="form-x" role="form" action="https://pothole.ml/php/gofifa/getSearchResults.php" method="GET" data-parsley-validate>
                         <div class="row">
                           <div class="col-xl-4">
                           <div class="form-group">
@@ -584,6 +584,18 @@
                   $('#loading-symbol').css({display:'none'});
 
                 }});
+            });
+
+            $('#form-x').submit(function(){
+                $.ajax({
+                url: $('#form-x').attr('action'),
+                type: 'GET',
+                data : $('#form-x').serialize(),
+                success: function(response){
+                  console.log(response);
+                }
+              });
+              return false;
             });
         </script>
     </body>

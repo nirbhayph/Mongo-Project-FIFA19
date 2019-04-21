@@ -25,13 +25,13 @@
       <div class="row">
           <div class="col-12">
               <div class="card-box table-responsive">
-                  <h4 class="m-t-0 header-title">Search Results Count <span class="badge badge-primary"><?php echo $_POST["resultsCount"]; ?></span></h4>
+                  <h4 class="m-t-0 header-title">Search Results Count <span class="badge badge-primary"><?php echo $_GET["resultsCount"]; ?></span></h4>
 
                   <p class="text-muted font-14 m-b-30">
                       <b>Player Details</b>
                   </p>
 
-                  <?php echo $_POST["search_text"]; ?>
+                  <?php echo $_GET["search_text"]; ?>
               </div>
           </div>
       </div> <!-- end row -->
