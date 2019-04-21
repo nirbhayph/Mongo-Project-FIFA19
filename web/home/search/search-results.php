@@ -31,7 +31,7 @@
                       <b>Player Details</b>
                   </p>
 
-                  <?php echo $_GET["search_text"]; ?>
+                  <?php echo $_POST["data"]; ?>
               </div>
           </div>
       </div> <!-- end row -->

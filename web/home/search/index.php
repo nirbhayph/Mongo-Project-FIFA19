@@ -52,7 +52,7 @@
                   <div class="card-box" id="custom-search" style="display:none">
                       <h4 class="m-t-0 m-b-30 header-title">Search on any of the player parameters</h4>
 
-                      <form id="form-x" role="form" action="https://pothole.ml/php/gofifa/getSearchResults.php" method="GET" data-parsley-validate>
+                      <form id="form-x" role="form" action="https://pothole.ml/php/gofifa/getSearchResults.php" method="POST" data-parsley-validate>
                         <div class="row">
                           <div class="col-xl-4">
                           <div class="form-group">
@@ -483,6 +483,10 @@
         </div>
         <!-- end wrapper -->
 
+        <form style="display: hidden" action="search-results.php" method="POST" id="form-z">
+              <input type="hidden" id="data" name="data" value=""/>
+        </form>
+
         <!-- jQuery  -->
         <script src="../assets/js/jquery.min.js"></script>
         <script src="../assets/js/popper.min.js"></script>
@@ -587,16 +591,21 @@
             });
 
             $('#form-x').submit(function(){
+
+              $('#custom-search').css({display:'none'});
+              $('#loading-symbol').css({display:'block'});
                 $.ajax({
-                url: $('#form-x').attr('action'),
-                type: 'GET',
-                data : $('#form-x').serialize(),
-                success: function(response){
-                  console.log(response);
-                }
-              });
-              return false;
+                  url: $('#form-x').attr('action'),
+                  type: 'GET',
+                  data : $('#form-x').serialize(),
+                  success: function(response){
+                    $("#data").val(response);
+                    $("#form-z").submit();
+                  }
+                });
+                return false;
             });
+
         </script>
     </body>
 </html>
