@@ -388,33 +388,20 @@
                           <h4 class="header-title mt-0 m-b-30">Player Location</h4>
                           <div id="mapid" style="height: 300px;"></div>
                         </div>
-                        <form method="post" class="card-box">
+                        <form id="commentForm" method="post" class="card-box">
                                     <span class="input-icon icon-right">
-                                        <textarea rows="2" class="form-control" placeholder="Post a new message"></textarea>
+                                        <textarea id="commentMade" rows="2" class="form-control" placeholder="Post a new message"></textarea>
                                     </span>
                             <div class="p-t-10 pull-right">
-                                <a class="btn btn-sm btn-primary waves-effect waves-light">Send <i class="fa fa-location-arrow"></i></a>
+                                <a id="commentFormSubmit" class="btn btn-sm btn-primary waves-effect waves-light">Send <i class="fa fa-location-arrow"></i></a>
                             </div>
                             <ul class="nav nav-pills profile-pills m-t-10">
                                 <li>
                                     <i class="fa fa-user"></i> <i> &nbsp;Reviewer can comment anonymously</i>
                                 </li>
                             </ul>
-
                         </form>
-                        <div class="card-box">
-                            <div class="comment">
-                                <img src="../assets/images/brand/dribbble-1.jpg" alt="" class="comment-avatar">
-                                <div class="comment-body">
-                                    <div class="comment-text">
-                                        <div class="comment-header">
-                                            <b style="color:white; font-size:14px;">Anonymous</b>
-                                        </div>
-                                        i'm in the middle of a timelapse animation myself! (Very different
-                                        though.) Awesome stuff.
-                                    </div>
-                                </div>
-                            </div>
+                        <div id="commentsSection" class="card-box">
                         </div>
 
 
@@ -839,6 +826,42 @@ var marker = L.marker([player["Latitude"], player["Longitude"]]).addTo(mymap);
 marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]+"</b><br>I am from <b>"+player["Nationality"]+"</b><br/> Overall Combined Rating - <b>"+player["Special"]+"</b><br/> Age - <b>"+player["Age"]+"</b><br/> Weight - <b>"+player["Weight"]+"</b><br/> Height - <b>"+player["Height"]+"</b>").openPopup();
 
         }});
+
+
+        window.setInterval(function(){
+          $.ajax({url: 'https://pothole.ml/php/gofifa/getComments.php?id='+<?php echo $_GET["id"]; ?>,
+          success: function(result){
+            var getCommentTemplate = function(comment){
+              return '<div class="comment"><img src="../assets/images/brand/dribbble-1.jpg" alt="" class="comment-avatar"><div class="comment-body"><div class="comment-text"><div class="comment-header"><b style="color:white; font-size:14px;">Anonymous</b></div>'+comment+'</div></div></div>';
+            }
+            var comments = JSON.parse(result);
+            var text = "";
+            console.log(comments);
+            for (i = 0; i < comments.length; i++) {
+              text += getCommentTemplate(comments[i]);
+            }
+            $('#commentsSection').html(text);
+          }});
+        }, 1000);
+
+        $("#commentFormSubmit").click(function() {
+              var commentMade = $('#commentMade').val();
+              if(commentMade === ""){
+                alert("Try again by inserting something in the message box!");
+              }else{
+                $.ajax({url: 'https://pothole.ml/php/gofifa/addComment.php?id='+<?php echo $_GET["id"]; ?>+'&comment='+commentMade,
+                success: function(result){
+                  if(result==="Success"){
+                    $('#commentMade').val("");
+                  }else{
+                    alert("Failed to insert message!");
+                  }
+                }});
+              }
+        });
+
+
+
 </script>
 <?php } ?>
 

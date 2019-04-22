@@ -213,7 +213,6 @@
                                 </div>
                         </div>
 
-
                     <h4> Movement </h4>
                     <div class="form-group row">
                             <label for="acceleration" class="col-sm-2 control-label"><b>Accel..</b></label>
@@ -526,8 +525,6 @@
                 });
                 return false;
             });
-
-
         </script>
     </body>
 </html>
