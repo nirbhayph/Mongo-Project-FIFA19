@@ -119,6 +119,7 @@
                                     <input name="weightRange" type="text" id="weight_range">
                                 </div>
                         </div>
+                        <!--
                         <div class="form-group">
                             <label>Value in Euros (Max: 150000000)</label>
                                 <input name="value" class="form-control"  type="text range" min="0"
@@ -134,7 +135,18 @@
                                 <input name="releaseClause" class="form-control"  type="text range" min="0"
                                        max="600000000" placeholder="Release Clause"/>
                         </div>
+                        -->
 
+                        <div class="form-group">
+                          <label>International Reputation</label>
+                          <select id="iReputation" name="iReputation[]" class="select2 select2-multiple" multiple="multiple" multiple data-placeholder="International Reputation(s)">
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>Real Face </label>
+                          <select id="rFace" name="rFace[]" class="select2 select2-multiple" multiple="multiple" multiple data-placeholder="Real Face(s)">
+                          </select>
+                        </div>
 
                         <h4> Attacking </h4>
                         <div class="form-group row">
@@ -360,16 +372,6 @@
                             <div class="col-sm-10">
                                 <input type="text" name="gkr" class="stats">
                             </div>
-                    </div>
-                    <div class="form-group">
-                      <label>International Reputation</label>
-                      <select id="iReputation" name="iReputation[]" class="select2 select2-multiple" multiple="multiple" multiple data-placeholder="International Reputation(s)">
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label>Real Face </label>
-                      <select id="rFace" name="rFace[]" class="select2 select2-multiple" multiple="multiple" multiple data-placeholder="Real Face(s)">
-                      </select>
                     </div>
                   </div>
                       </div>
