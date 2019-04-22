@@ -7,6 +7,9 @@
   <?php
   include "../header/header.php";
   ?>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
 </head>
 
     <body>
@@ -31,18 +34,18 @@
                     <div class="col-sm-8">
                         <div class="bg-picture card-box">
                             <div class="profile-info-name">
-                                <img id="profile_pic_fifa" src=""
-                                     class="img-thumbnail" alt="profile-image">
+                                <!--<img id="profile_pic_fifa" src=""
+                                     class="img-thumbnail" alt="profile-image">-->
 
                                 <div class="profile-info-detail">
-                                    <h4 id="playerName" style="font-size: 22px;" class="m-0"></h4><br/>
+                                    <p><img id="profile_pic_fifa" src="" style="width:50px; margin-left:12px; border:2px solid #394C57; border-radius: 5px;"></p>
+                                    <p><h4 id="playerName" style="font-size: 22px;" class="m-0"></h4></p><br/>
                                     <p class="text-muted m-b-20"><span id="playerNationality" style="font-size: 16px;" class="badge badge-primary"></span> &nbsp; <span id="playerClub" style="font-size: 16px;" class="badge badge-secondary"></span> &nbsp; <span id="playerPosition" style="font-size: 16px;" class="badge badge-success"></span> &nbsp; <span id="playerJNo" style="font-size: 16px;" class="badge badge-danger"></span></p>
                                     <p id="playerDescription"></p>
 
                                     <div class="button-list m-t-20">
-
-                                            <img id="country_pic_fifa" src="" style="width:5%; margin-left:12px;">
-                                            <img id="club_pic_fifa" src="" style="width:5%;">
+                                            <img id="country_pic_fifa" src="" style="width:40px; margin-left:12px;">
+                                            <img id="club_pic_fifa" src="" style="width:40px;">
                                             <p style="margin-left:12px;"class="text-muted m-b-20"><span id="playerJoinDate" style="font-size: 16px;" class="badge badge-secondary"></span> &nbsp;<span id="playerExpDate" style="font-size: 16px;" class="badge badge-secondary"></span></p>
                                     </div>
                                 </div>
@@ -381,7 +384,10 @@
                                 </div>
                             </div>
 
-
+                        <div class="card-box">
+                          <h4 class="header-title mt-0 m-b-30">Player Location</h4>
+                          <div id="mapid" style="height: 300px;"></div>
+                        </div>
                         <form method="post" class="card-box">
                                     <span class="input-icon icon-right">
                                         <textarea rows="2" class="form-control" placeholder="Post a new message"></textarea>
@@ -524,313 +530,27 @@
                             </ul>
                         </div>-->
 
-                    <div class="card-box">
-
+                    <div id="attackingPr" class="card-box">
                         <h4 class="header-title m-t-0 m-b-30">Attacking</h4>
-
-                        <p class="font-600 m-b-5">Crossing <span class="text-primary pull-right">80%</span></p>
-                        <div class="progress progress-bar-primary-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-primary progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 80%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-danger -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">Heading <span class="text-pink pull-right">50%</span></p>
-                        <div class="progress progress-bar-pink-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-pink progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 50%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-pink -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">Short Passing<span class="text-info pull-right">70%</span></p>
-                        <div class="progress progress-bar-info-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-info progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 70%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-info -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">Finishing<span class="text-warning pull-right">65%</span></p>
-                        <div class="progress progress-bar-warning-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-warning progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-warning -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">Volleys<span class="text-danger pull-right">65%</span></p>
-                        <div class="progress progress-bar-danger-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-danger progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-warning -->
-                        </div><!-- /.progress .no-rounded -->
                     </div>
-                    <div class="card-box">
-
+                    <div id="skillPr" class="card-box">
                         <h4 class="header-title m-t-0 m-b-30">Skill</h4>
-
-                        <p class="font-600 m-b-5">Dribbling <span class="text-primary pull-right">80%</span></p>
-                        <div class="progress progress-bar-primary-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-primary progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 80%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-danger -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">Curve <span class="text-pink pull-right">50%</span></p>
-                        <div class="progress progress-bar-pink-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-pink progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 50%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-pink -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">FK Accuracy<span class="text-info pull-right">70%</span></p>
-                        <div class="progress progress-bar-info-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-info progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 70%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-info -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">LPassing<span class="text-warning pull-right">65%</span></p>
-                        <div class="progress progress-bar-warning-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-warning progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-warning -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">BControl<span class="text-danger pull-right">65%</span></p>
-                        <div class="progress progress-bar-danger-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-danger progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-warning -->
-                        </div><!-- /.progress .no-rounded -->
                     </div>
-
-
-                    <div class="card-box">
-
+                    <div id="movementPr" class="card-box">
                         <h4 class="header-title m-t-0 m-b-30">Movement</h4>
-
-                        <p class="font-600 m-b-5">Acceleration <span class="text-primary pull-right">80%</span></p>
-                        <div class="progress progress-bar-primary-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-primary progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 80%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-danger -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">SprintSp <span class="text-pink pull-right">50%</span></p>
-                        <div class="progress progress-bar-pink-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-pink progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 50%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-pink -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">Agility<span class="text-info pull-right">70%</span></p>
-                        <div class="progress progress-bar-info-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-info progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 70%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-info -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">Reactions<span class="text-warning pull-right">65%</span></p>
-                        <div class="progress progress-bar-warning-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-warning progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-warning -->
-                        </div><!-- /.progress .no-rounded -->
-
-                        <p class="font-600 m-b-5">Balance<span class="text-danger pull-right">65%</span></p>
-                        <div class="progress progress-bar-danger-alt progress-sm m-b-20">
-                            <div class="progress-bar progress-bar-danger progress-animated wow animated animated"
-                            role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                            </div><!-- /.progress-bar .progress-bar-warning -->
-                        </div><!-- /.progress .no-rounded -->
                     </div>
-
-
-                                        <div class="card-box">
-
-                                            <h4 class="header-title m-t-0 m-b-30">Power</h4>
-
-                                            <p class="font-600 m-b-5">SPower <span class="text-primary pull-right">80%</span></p>
-                                            <div class="progress progress-bar-primary-alt progress-sm m-b-20">
-                                                <div class="progress-bar progress-bar-primary progress-animated wow animated animated"
-                                                role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 80%; visibility: visible; animation-name: animationProgress;">
-                                                </div><!-- /.progress-bar .progress-bar-danger -->
-                                            </div><!-- /.progress .no-rounded -->
-
-                                            <p class="font-600 m-b-5">Jumping <span class="text-pink pull-right">50%</span></p>
-                                            <div class="progress progress-bar-pink-alt progress-sm m-b-20">
-                                                <div class="progress-bar progress-bar-pink progress-animated wow animated animated"
-                                                role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 50%; visibility: visible; animation-name: animationProgress;">
-                                                </div><!-- /.progress-bar .progress-bar-pink -->
-                                            </div><!-- /.progress .no-rounded -->
-
-                                            <p class="font-600 m-b-5">Stamina<span class="text-info pull-right">70%</span></p>
-                                            <div class="progress progress-bar-info-alt progress-sm m-b-20">
-                                                <div class="progress-bar progress-bar-info progress-animated wow animated animated"
-                                                role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 70%; visibility: visible; animation-name: animationProgress;">
-                                                </div><!-- /.progress-bar .progress-bar-info -->
-                                            </div><!-- /.progress .no-rounded -->
-
-                                            <p class="font-600 m-b-5">Strength<span class="text-warning pull-right">65%</span></p>
-                                            <div class="progress progress-bar-warning-alt progress-sm m-b-20">
-                                                <div class="progress-bar progress-bar-warning progress-animated wow animated animated"
-                                                role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                                                </div><!-- /.progress-bar .progress-bar-warning -->
-                                            </div><!-- /.progress .no-rounded -->
-
-                                            <p class="font-600 m-b-5">LongShots<span class="text-danger pull-right">65%</span></p>
-                                            <div class="progress progress-bar-danger-alt progress-sm m-b-20">
-                                                <div class="progress-bar progress-bar-danger progress-animated wow animated animated"
-                                                role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                                                </div><!-- /.progress-bar .progress-bar-warning -->
-                                            </div><!-- /.progress .no-rounded -->
-                                        </div>
-
-                                    <div class="card-box">
-
-                                        <h4 class="header-title m-t-0 m-b-30">Defending</h4>
-
-                                        <p class="font-600 m-b-5">Marking <span class="text-primary pull-right">80%</span></p>
-                                        <div class="progress progress-bar-primary-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-primary progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 80%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-danger -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                        <p class="font-600 m-b-5">StandingTackle <span class="text-pink pull-right">50%</span></p>
-                                        <div class="progress progress-bar-pink-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-pink progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 50%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-pink -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                        <p class="font-600 m-b-5">SlidingTackle<span class="text-info pull-right">70%</span></p>
-                                        <div class="progress progress-bar-info-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-info progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 70%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-info -->
-                                        </div><!-- /.progress .no-rounded -->
-                                    </div>
-                                    <div class="card-box">
-
-                                        <h4 class="header-title m-t-0 m-b-30">Mentality</h4>
-
-                                        <p class="font-600 m-b-5">Aggression <span class="text-primary pull-right">80%</span></p>
-                                        <div class="progress progress-bar-primary-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-primary progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 80%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-danger -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                        <p class="font-600 m-b-5">Interception <span class="text-pink pull-right">50%</span></p>
-                                        <div class="progress progress-bar-pink-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-pink progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 50%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-pink -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                        <p class="font-600 m-b-5">Positioning<span class="text-info pull-right">70%</span></p>
-                                        <div class="progress progress-bar-info-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-info progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 70%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-info -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                        <p class="font-600 m-b-5">Vision<span class="text-warning pull-right">65%</span></p>
-                                        <div class="progress progress-bar-warning-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-warning progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-warning -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                        <p class="font-600 m-b-5">Penalties<span class="text-danger pull-right">65%</span></p>
-                                        <div class="progress progress-bar-danger-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-danger progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-warning -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                          <p class="font-600 m-b-5">Composure<span class="text-info pull-right">70%</span></p>
-                                          <div class="progress progress-bar-info-alt progress-sm m-b-20">
-                                              <div class="progress-bar progress-bar-info progress-animated wow animated animated"
-                                              role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                                              style="width: 70%; visibility: visible; animation-name: animationProgress;">
-                                              </div><!-- /.progress-bar .progress-bar-info -->
-                                          </div><!-- /.progress .no-rounded -->
-                                    </div>
-                                    <div class="card-box">
-
-                                        <h4 class="header-title m-t-0 m-b-30">GoalKeeping</h4>
-
-                                        <p class="font-600 m-b-5">GKDiving <span class="text-primary pull-right">80%</span></p>
-                                        <div class="progress progress-bar-primary-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-primary progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 80%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-danger -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                        <p class="font-600 m-b-5">GKHandling <span class="text-pink pull-right">50%</span></p>
-                                        <div class="progress progress-bar-pink-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-pink progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 50%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-pink -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                        <p class="font-600 m-b-5">GKKicking<span class="text-info pull-right">70%</span></p>
-                                        <div class="progress progress-bar-info-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-info progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 70%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-info -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                        <p class="font-600 m-b-5">GKPositioning<span class="text-warning pull-right">65%</span></p>
-                                        <div class="progress progress-bar-warning-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-warning progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-warning -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                        <p class="font-600 m-b-5">GKReflexes<span class="text-danger pull-right">65%</span></p>
-                                        <div class="progress progress-bar-danger-alt progress-sm m-b-20">
-                                            <div class="progress-bar progress-bar-danger progress-animated wow animated animated"
-                                            role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 65%; visibility: visible; animation-name: animationProgress;">
-                                            </div><!-- /.progress-bar .progress-bar-warning -->
-                                        </div><!-- /.progress .no-rounded -->
-
-                                    </div>
-
+                    <div id="powerPr" class="card-box">
+                        <h4 class="header-title m-t-0 m-b-30">Power</h4>
+                    </div>
+                    <div id="defendingPr" class="card-box">
+                        <h4 class="header-title m-t-0 m-b-30">Defending</h4>
+                    </div>
+                    <div id="mentalityPr" class="card-box">
+                        <h4 class="header-title m-t-0 m-b-30">Mentality</h4>
+                    </div>
+                    <div id="goalkeepingPr" class="card-box">
+                        <h4 class="header-title m-t-0 m-b-30">GoalKeeping</h4>
+                    </div>
                     </div>
                 </div>
 
@@ -936,6 +656,9 @@
         <script src="../assets/js/jquery.core.js"></script>
         <script src="../assets/js/jquery.app.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
         <?php if(isset($_GET["id"])) { ?>
         <script>
 
@@ -1032,8 +755,53 @@
           $("#rcb-val").html(functionStats(player["RCB"]));
           $("#rb-val").html(functionStats(player["RB"]));
 
+          var progressStat = function(stat, color, field){
+            if(stat===""){
+              stat=0;
+            }
+            return '<p class="font-600 m-b-5">'+field+'<span class="text-'+color+' pull-right">'+stat+'%</span></p><div class="progress progress-bar-'+color+'-alt progress-sm m-b-20"><div class="progress-bar progress-bar-'+color+' progress-animated wow animated animated" role="progressbar" aria-valuenow="'+stat+'" aria-valuemin="0" aria-valuemax="100" style="width:'+stat+'%; visibility: visible; animation-name: animationProgress;"></div></div>';
+          }
 
+          $('#attackingPr').append(progressStat(player["Crossing"], "primary", "Crossing"));
+          $('#attackingPr').append(progressStat(player["HeadingAccuracy"], "pink", "Heading"));
+          $('#attackingPr').append(progressStat(player["ShortPassing"], "info", "ShortPassing"));
+          $('#attackingPr').append(progressStat(player["Finishing"], "warning", "Finishing"));
+          $('#attackingPr').append(progressStat(player["Volleys"], "danger", "Volleys"));
 
+          $('#defendingPr').append(progressStat(player["Marking"], "primary", "Marking"));
+          $('#defendingPr').append(progressStat(player["StandingTackle"], "pink", "StandingTackle"));
+          $('#defendingPr').append(progressStat(player["SlidingTackle"], "info", "SlidingTackle"));
+
+          $('#mentalityPr').append(progressStat(player["Aggression"], "primary", "Aggression"));
+          $('#mentalityPr').append(progressStat(player["Interceptions"], "pink", "Interception"));
+          $('#mentalityPr').append(progressStat(player["Positioning"], "info", "Positioning"));
+          $('#mentalityPr').append(progressStat(player["Vision"], "warning", "Vision"));
+          $('#mentalityPr').append(progressStat(player["Penalties"], "danger", "Penalties"));
+          $('#mentalityPr').append(progressStat(player["Composure"], "success", "Composure"));
+
+          $('#powerPr').append(progressStat(player["ShotPower"], "primary", "SPower"));
+          $('#powerPr').append(progressStat(player["Jumping"], "pink", "Jumping"));
+          $('#powerPr').append(progressStat(player["Stamina"], "info", "Stamina"));
+          $('#powerPr').append(progressStat(player["Strength"], "warning", "Strength"));
+          $('#powerPr').append(progressStat(player["LongShots"], "danger", "LongShots"));
+
+          $('#skillPr').append(progressStat(player["Dribbling"], "primary", "Dribbling"));
+          $('#skillPr').append(progressStat(player["Curve"], "pink", "Curves"));
+          $('#skillPr').append(progressStat(player["FKAccuracy"], "info", "FKAccuracy"));
+          $('#skillPr').append(progressStat(player["LongPassing"], "warning", "LPassing"));
+          $('#skillPr').append(progressStat(player["BallControl"], "danger", "BControl"));
+
+          $('#movementPr').append(progressStat(player["Acceleration"], "primary", "Acceleration"));
+          $('#movementPr').append(progressStat(player["SprintSpeed"], "pink", "SprintSp"));
+          $('#movementPr').append(progressStat(player["Agility"], "info", "Agility"));
+          $('#movementPr').append(progressStat(player["Reactions"], "warning", "Reactions"));
+          $('#movementPr').append(progressStat(player["Balance"], "danger", "Balance"));
+
+          $('#goalkeepingPr').append(progressStat(player["GKDiving"], "primary", "GKDiving"));
+          $('#goalkeepingPr').append(progressStat(player["GKHandling"], "pink", "GKHandling"));
+          $('#goalkeepingPr').append(progressStat(player["GKKicking"], "info", "GKKicking"));
+          $('#goalkeepingPr').append(progressStat(player["GKPositioning"], "warning", "GKPositioning"));
+          $('#goalkeepingPr').append(progressStat(player["GKReflexes"], "danger", "GKReflexes"));
 
           new Chart(document.getElementById("radar-chart"), {
             type: 'radar',
@@ -1058,6 +826,17 @@
             }
           }
   });
+
+  var mymap = L.map('mapid').setView([player["Latitude"], player["Longitude"]], 9);
+
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoibmlyYmhheXBoaCIsImEiOiJjanVzajFnd3k0NnE4M3lucWdsbm1jam9sIn0.4U06eoSypRZF7TB0czQdHA'
+}).addTo(mymap);
+var marker = L.marker([player["Latitude"], player["Longitude"]]).addTo(mymap);
+marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]+"</b><br>I am from <b>"+player["Nationality"]+"</b><br/> Overall Combined Rating - <b>"+player["Special"]+"</b><br/> Age - <b>"+player["Age"]+"</b><br/> Weight - <b>"+player["Weight"]+"</b><br/> Height - <b>"+player["Height"]+"</b>").openPopup();
 
         }});
 </script>
