@@ -31,19 +31,19 @@
                     <div class="col-sm-8">
                         <div class="bg-picture card-box">
                             <div class="profile-info-name">
-                                <img src="https://cdn.sofifa.org/players/10/19/20801.png"
+                                <img id="profile_pic_fifa" src=""
                                      class="img-thumbnail" alt="profile-image">
 
                                 <div class="profile-info-detail">
-                                    <h4 style="font-size: 22px;" class="m-0">Cristiano Ronaldo</h4><br/>
-                                    <p class="text-muted m-b-20"><span style="font-size: 16px;" class="badge badge-primary">Portugal</span> &nbsp; <span style="font-size: 16px;" class="badge badge-secondary">Juventus</span> &nbsp; <span style="font-size: 16px;" class="badge badge-success">ST</span> &nbsp; <span style="font-size: 16px;" class="badge badge-danger">JNo. 7</span></p>
-                                    <p>Cristiano Ronaldo was born on Feb. 5, 1985. He is currently 34 years old and plays as a Striker for Juventus in Italy. His overall rating in FIFA 19 is 94 with a potential of 94. Cristiano Ronaldo has got a 5-star skillmoves rating. He prefers to shoot with his right foot. His workrates are High / Low. Cristiano Ronaldo's height is 187 cm cm and his weight is estimated at 83 kg kg according to our database. Currently, Cristiano Ronaldo is playing with number 7. His best stats are: Reactions: 96, Att. Position: 95, Composure: 95, Jumping: 95, Shot Power: 95.</p>
+                                    <h4 id="playerName" style="font-size: 22px;" class="m-0"></h4><br/>
+                                    <p class="text-muted m-b-20"><span id="playerNationality" style="font-size: 16px;" class="badge badge-primary"></span> &nbsp; <span id="playerClub" style="font-size: 16px;" class="badge badge-secondary"></span> &nbsp; <span id="playerPosition" style="font-size: 16px;" class="badge badge-success"></span> &nbsp; <span id="playerJNo" style="font-size: 16px;" class="badge badge-danger"></span></p>
+                                    <p id="playerDescription"></p>
 
                                     <div class="button-list m-t-20">
 
-                                            <img src="https://cdn.sofifa.org/flags/38.png" style="width:5%; margin-left:12px;">
-                                            <img src="https://cdn.sofifa.org/teams/2/light/45.png" style="width:5%;">
-                                            <p style="margin-left:12px;"class="text-muted m-b-20"><span style="font-size: 16px;" class="badge badge-secondary">Join Date: 28-10-2018</span> &nbsp;<span style="font-size: 16px;" class="badge badge-secondary">Contract Exp: 2022</span></p>
+                                            <img id="country_pic_fifa" src="" style="width:5%; margin-left:12px;">
+                                            <img id="club_pic_fifa" src="" style="width:5%;">
+                                            <p style="margin-left:12px;"class="text-muted m-b-20"><span id="playerJoinDate" style="font-size: 16px;" class="badge badge-secondary"></span> &nbsp;<span id="playerExpDate" style="font-size: 16px;" class="badge badge-secondary"></span></p>
                                     </div>
                                 </div>
 
@@ -56,7 +56,7 @@
                             <div class="col-xl-4 col-md-4">
                                 <div class="card-box widget-user">
                                     <div class="text-center">
-                                        <h2 class="text-custom">€77M</h2>
+                                        <h2 id="playerValue" class="text-custom"></h2>
                                         <h5>Value</h5>
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@
                             <div class="col-xl-4 col-md-4">
                                 <div class="card-box widget-user">
                                     <div class="text-center">
-                                        <h2 class="text-pink">€405K</h2>
+                                        <h2 id="playerWage" class="text-pink"></h2>
                                         <h5>Wage</h5>
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@
                             <div class="col-xl-4 col-md-4">
                                 <div class="card-box widget-user">
                                     <div class="text-center">
-                                        <h2 class="text-warning">€127.1M</h2>
+                                        <h2 id="playerRelease" class="text-warning"></h2>
                                         <h5>Release Clause</h5>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card-box widget-user">
                                     <div class="text-center">
-                                        <h2 class="text-custom" data-plugin="counterup">5</h2>
+                                        <h2 id="playerIRep" class="text-custom"></h2>
                                         <h5>International Reputation</h5>
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card-box widget-user">
                                     <div class="text-center">
-                                        <h2 class="text-pink" data-plugin="counterup">5</h2>
+                                        <h2 id="playerSkill" class="text-pink"></h2>
                                         <h5>Skill Moves Rating Achieved</h5>
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card-box widget-user">
                                     <div class="text-center">
-                                        <h2 class="text-warning" data-plugin="counterup">4</h2>
+                                        <h2 id="playerWFoot" class="text-warning"></h2>
                                         <h5>Weak Foot Power Rating</h5>
                                     </div>
                                 </div>
@@ -111,7 +111,7 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card-box widget-user">
                                     <div class="text-center">
-                                        <h2 class="text-info">Right</h2>
+                                        <h2 id="playerPFoot" class="text-info"></h2>
                                         <h5>Player's Preferred Foot</h5>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@
                             <div class="col-xl-2 col-md-2">
                                 <div class="card-box widget-user">
                                     <div class="text-center">
-                                        <h2 id="ls-val" class="text-pink" data-plugin="counterup">28</h2>
+                                        <h2 id="ls-val" class="text-pink"></h2>
                                         <h5>LS</h5>
                                     </div>
                                 </div>
@@ -135,7 +135,7 @@
                             <div class="col-xl-2 col-md-2">
                                 <div class="card-box widget-user">
                                     <div class="text-center">
-                                        <h2 id="st-val" class="text-warning" data-plugin="counterup">31</h2>
+                                        <h2 id="st-val" class="text-warning"></h2>
                                         <h5>ST</h5>
                                     </div>
                                 </div>
@@ -143,7 +143,7 @@
                             <div class="col-xl-2 col-md-2">
                                 <div class="card-box widget-user">
                                     <div class="text-center">
-                                        <h2 id="rs-val" class="text-pink" data-plugin="counterup">23</h2>
+                                        <h2 id="rs-val" class="text-pink"></h2>
                                         <h5>RS</h5>
                                     </div>
                                 </div>
@@ -157,7 +157,7 @@
                              <div class="col-xl-2 col-md-2">
                                  <div class="card-box widget-user">
                                      <div class="text-center">
-                                         <h2 id="lw-val" class="text-pink" data-plugin="counterup">63</h2>
+                                         <h2 id="lw-val" class="text-pink"></h2>
                                          <h5>LW</h5>
                                      </div>
                                  </div>
@@ -166,7 +166,7 @@
                              <div class="col-xl-2 col-md-2">
                                  <div class="card-box widget-user">
                                      <div class="text-center">
-                                         <h2 id="lf-val" class="text-custom" data-plugin="counterup">29</h2>
+                                         <h2 id="lf-val" class="text-custom"></h2>
                                          <h5>LF</h5>
                                      </div>
                                  </div>
@@ -175,7 +175,7 @@
                              <div class="col-xl-2 col-md-2">
                                  <div class="card-box widget-user">
                                      <div class="text-center">
-                                         <h2 id="cf-val" class="text-warning" data-plugin="counterup">95</h2>
+                                         <h2 id="cf-val" class="text-warning"></h2>
                                          <h5>CF</h5>
                                      </div>
                                  </div>
@@ -183,7 +183,7 @@
                              <div class="col-xl-2 col-md-2">
                                  <div class="card-box widget-user">
                                      <div class="text-center">
-                                         <h2 id="rf-val" class="text-custom" data-plugin="counterup">82</h2>
+                                         <h2 id="rf-val" class="text-custom"></h2>
                                          <h5>RF</h5>
                                      </div>
                                  </div>
@@ -191,7 +191,7 @@
                              <div class="col-xl-2 col-md-2">
                                  <div class="card-box widget-user">
                                      <div class="text-center">
-                                         <h2 id="rw-val" class="text-pink" data-plugin="counterup">85</h2>
+                                         <h2 id="rw-val" class="text-pink"></h2>
                                          <h5>RW</h5>
                                      </div>
                                  </div>
@@ -205,7 +205,7 @@
                              <div class="col-xl-2 col-md-2">
                                  <div class="card-box widget-user">
                                      <div class="text-center">
-                                         <h2 id="lam-val" class="text-pink" data-plugin="counterup">28</h2>
+                                         <h2 id="lam-val" class="text-pink"></h2>
                                          <h5>LAM</h5>
                                      </div>
                                  </div>
@@ -215,7 +215,7 @@
                              <div class="col-xl-2 col-md-2">
                                  <div class="card-box widget-user">
                                      <div class="text-center">
-                                         <h2 id="cam-val" class="text-warning" data-plugin="counterup">31</h2>
+                                         <h2 id="cam-val" class="text-warning"></h2>
                                          <h5>CAM</h5>
                                      </div>
                                  </div>
@@ -223,7 +223,7 @@
                              <div class="col-xl-2 col-md-2">
                                  <div class="card-box widget-user">
                                      <div class="text-center">
-                                         <h2 id="ram-val" class="text-pink" data-plugin="counterup">23</h2>
+                                         <h2 id="ram-val" class="text-pink"></h2>
                                          <h5>RAM</h5>
                                      </div>
                                  </div>
@@ -238,7 +238,7 @@
                               <div class="col-xl-2 col-md-2">
                                   <div class="card-box widget-user">
                                       <div class="text-center">
-                                          <h2 id="lm-val" class="text-pink" data-plugin="counterup">63</h2>
+                                          <h2 id="lm-val" class="text-pink"></h2>
                                           <h5>LM</h5>
                                       </div>
                                   </div>
@@ -247,7 +247,7 @@
                               <div class="col-xl-2 col-md-2">
                                   <div class="card-box widget-user">
                                       <div class="text-center">
-                                          <h2 id="lcm-val" class="text-custom" data-plugin="counterup">29</h2>
+                                          <h2 id="lcm-val" class="text-custom"></h2>
                                           <h5>LCM</h5>
                                       </div>
                                   </div>
@@ -256,7 +256,7 @@
                               <div class="col-xl-2 col-md-2">
                                   <div class="card-box widget-user">
                                       <div class="text-center">
-                                          <h2 id="cm-val" class="text-warning" data-plugin="counterup">95</h2>
+                                          <h2 id="cm-val" class="text-warning"></h2>
                                           <h5>CM</h5>
                                       </div>
                                   </div>
@@ -264,7 +264,7 @@
                               <div class="col-xl-2 col-md-2">
                                   <div class="card-box widget-user">
                                       <div class="text-center">
-                                          <h2 id="rcm-val" class="text-custom" data-plugin="counterup">82</h2>
+                                          <h2 id="rcm-val" class="text-custom"></h2>
                                           <h5>RCM</h5>
                                       </div>
                                   </div>
@@ -272,7 +272,7 @@
                               <div class="col-xl-2 col-md-2">
                                   <div class="card-box widget-user">
                                       <div class="text-center">
-                                          <h2 id="rm-val"class="text-pink" data-plugin="counterup">85</h2>
+                                          <h2 id="rm-val"class="text-pink"></h2>
                                           <h5>RM</h5>
                                       </div>
                                   </div>
@@ -288,7 +288,7 @@
                                <div class="col-xl-2 col-md-2">
                                    <div class="card-box widget-user">
                                        <div class="text-center">
-                                           <h2 id="lwb-val" class="text-pink" data-plugin="counterup">63</h2>
+                                           <h2 id="lwb-val" class="text-pink"></h2>
                                            <h5>LWB</h5>
                                        </div>
                                    </div>
@@ -297,7 +297,7 @@
                                <div class="col-xl-2 col-md-2">
                                    <div class="card-box widget-user">
                                        <div class="text-center">
-                                           <h2 id="lmd-val" class="text-custom" data-plugin="counterup">29</h2>
+                                           <h2 id="ldm-val" class="text-custom"></h2>
                                            <h5>LDM</h5>
                                        </div>
                                    </div>
@@ -306,7 +306,7 @@
                                <div class="col-xl-2 col-md-2">
                                    <div class="card-box widget-user">
                                        <div class="text-center">
-                                           <h2 id="cdm-val" class="text-warning" data-plugin="counterup">95</h2>
+                                           <h2 id="cdm-val" class="text-warning"></h2>
                                            <h5>CDM</h5>
                                        </div>
                                    </div>
@@ -314,7 +314,7 @@
                                <div class="col-xl-2 col-md-2">
                                    <div class="card-box widget-user">
                                        <div class="text-center">
-                                           <h2 id="rdm-val" class="text-custom" data-plugin="counterup">82</h2>
+                                           <h2 id="rdm-val" class="text-custom"></h2>
                                            <h5>RDM</h5>
                                        </div>
                                    </div>
@@ -322,7 +322,7 @@
                                <div class="col-xl-2 col-md-2">
                                    <div class="card-box widget-user">
                                        <div class="text-center">
-                                           <h2 id="rwb-val" class="text-pink" data-plugin="counterup">85</h2>
+                                           <h2 id="rwb-val" class="text-pink"></h2>
                                            <h5>RWB</h5>
                                        </div>
                                    </div>
@@ -338,7 +338,7 @@
                                 <div class="col-xl-2 col-md-2">
                                     <div class="card-box widget-user">
                                         <div class="text-center">
-                                            <h2 id="lb-val" class="text-pink" data-plugin="counterup">63</h2>
+                                            <h2 id="lb-val" class="text-pink"></h2>
                                             <h5>LB</h5>
                                         </div>
                                     </div>
@@ -347,7 +347,7 @@
                                 <div class="col-xl-2 col-md-2">
                                     <div class="card-box widget-user">
                                         <div class="text-center">
-                                            <h2 id="lcb-val" class="text-custom" data-plugin="counterup">29</h2>
+                                            <h2 id="lcb-val" class="text-custom"></h2>
                                             <h5>LCB</h5>
                                         </div>
                                     </div>
@@ -356,7 +356,7 @@
                                 <div class="col-xl-2 col-md-2">
                                     <div class="card-box widget-user">
                                         <div class="text-center">
-                                            <h2 id="cb-val" class="text-warning" data-plugin="counterup">95</h2>
+                                            <h2 id="cb-val" class="text-warning"></h2>
                                             <h5>CB</h5>
                                         </div>
                                     </div>
@@ -364,7 +364,7 @@
                                 <div class="col-xl-2 col-md-2">
                                     <div class="card-box widget-user">
                                         <div class="text-center">
-                                            <h2 id="rcb-val" class="text-custom" data-plugin="counterup">82</h2>
+                                            <h2 id="rcb-val" class="text-custom"></h2>
                                             <h5>RCB</h5>
                                         </div>
                                     </div>
@@ -372,7 +372,7 @@
                                 <div class="col-xl-2 col-md-2">
                                     <div class="card-box widget-user">
                                         <div class="text-center">
-                                            <h2 id="rb-val" class="text-pink" data-plugin="counterup">85</h2>
+                                            <h2 id="rb-val" class="text-pink"></h2>
                                             <h5>RB</h5>
                                         </div>
                                     </div>
@@ -427,14 +427,14 @@
 
                           <div class="widget-chart-1">
                               <div class="widget-chart-box-1">
-                                  <input data-plugin="knob" data-width="80" data-height="80" data-fgColor="#35b8e0 "
-                                         data-bgColor="#B8E6F4" value="94"
+                                  <input id="pOverall" data-plugin="knob" data-width="80" data-height="80" data-fgColor="#35b8e0 "
+                                         data-bgColor="#B8E6F4" value=""
                                          data-skin="tron" data-angleOffset="180" data-readOnly=true
                                          data-thickness=".15"/>
                               </div>
 
                               <div class="widget-detail-1">
-                                  <h2 class="p-t-10 mb-0"> 94 </h2>
+                                  <h2 id="playerOverall" class="p-t-10 mb-0"> </h2>
                                   <p class="text-muted m-b-10">Overall Rating Achieved</p>
                               </div>
                           </div>
@@ -444,14 +444,14 @@
 
                           <div class="widget-chart-1">
                               <div class="widget-chart-box-1">
-                                  <input data-plugin="knob" data-width="80" data-height="80" data-fgColor="#10c469"
-                                         data-bgColor="#AAE2C6" value="94"
+                                  <input id="pPotential" data-plugin="knob" data-width="80" data-height="80" data-fgColor="#10c469"
+                                         data-bgColor="#AAE2C6" value=""
                                          data-skin="tron" data-angleOffset="180" data-readOnly=true
                                          data-thickness=".15"/>
                               </div>
 
                               <div class="widget-detail-1">
-                                  <h2 class="p-t-10 mb-0"> 94 </h2>
+                                  <h2 id="playerPotential" class="p-t-10 mb-0"> </h2>
                                   <p class="text-muted m-b-10">Potential Achieved</p>
                               </div>
                           </div>
@@ -936,31 +936,132 @@
         <script src="../assets/js/jquery.core.js"></script>
         <script src="../assets/js/jquery.app.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <?php if(isset($_GET["id"])) { ?>
         <script>
-        new Chart(document.getElementById("radar-chart"), {
-    type: 'radar',
-    data: {
-      labels: ["Attacking", "Skill", "Movement", "Power", "Defending", "Mentality", "Goal Keeping"],
-      datasets: [
-        {
-          label: "Cristiano Ronaldo",
-          fill: true,
-          backgroundColor: "rgba(28, 138, 226, 0.2)",
-          borderColor: "rgba(28, 138, 226,1)",
-          pointBorderColor: "#fff",
-          pointBackgroundColor: "rgba(28, 138, 226,1)",
-          data: [96,99,82,86,74,88,99]
-        }
-      ]
-    },
-    options: {
-      title: {
-        display: true,
-        text: 'Stats Radar'
-      }
-    }
-});
+
+        $.ajax({url: 'https://pothole.ml/php/gofifa/getPlayerDetails.php?id='+<?php echo $_GET["id"]; ?>,
+        success: function(result){
+          console.log(result);
+          var json_result = JSON.parse(result);
+          var talentArray = json_result["talent_array"];
+          var photoLink = json_result["photo"];
+          $('#profile_pic_fifa').attr("src",photoLink);
+          var clubLink = json_result["club"];
+          $('#club_pic_fifa').attr("src",clubLink);
+          var countryLink = json_result["country"];
+          $('#country_pic_fifa').attr("src",countryLink);
+          var player = json_result["result"];
+          var name = player["Name"];
+          $('#playerName').html(name);
+          var description = player["description"];
+          $('#playerDescription').html(description);
+          //
+          var age = player["Age"];
+          $('#playerAge').html(age);
+          var nationality = player["Nationality"];
+          $('#playerNationality').html(nationality);
+          var club = player["Club"];
+          $('#playerClub').html(club);
+          var overall = player["Overall"];
+          $('#playerOverall').html(overall);
+          $('#pOverall').val(overall).trigger('change').trigger('draw');
+          var potential = player["Potential"];
+          $('#pPotential').val(potential).trigger('change').trigger('draw');
+          $('#playerPotential').html(potential);
+
+          var position = player["Position"];
+          $('#playerPosition').html(position);
+
+          var jersey = player["Jersey Number"];
+          $('#playerJNo').html('JNo. '+jersey);
+
+          var joinDate = player["Joined"];
+          $('#playerJoinDate').html('Join Date: '+joinDate);
+          var expDate = player["Contract Valid Until"];
+          $('#playerExpDate').html('Contract Exp: '+expDate);
+
+          var value = player["Value"];
+          $("#playerValue").html(value);
+          var wage = player["Wage"];
+          $("#playerWage").html(wage);
+          var releaseC = player["Release Clause"];
+          $("#playerRelease").html(releaseC);
+
+          var iRep = player["International Reputation"];
+          $("#playerIRep").html(iRep);
+          var sMoves = player["Skill Moves"];
+          $("#playerSkill").html(sMoves);
+          var wFoot = player["Weak Foot"];
+          $("#playerWFoot").html(wFoot);
+          var pFoot = player["Preferred Foot"];
+          $("#playerPFoot").html(pFoot);
+
+          var functionStats = function(stat){
+            if(stat===""){
+              return 0;
+            }
+            else{
+              return stat;
+            }
+          }
+
+          $("#ls-val").html(functionStats(player["LS"]));
+          $("#st-val").html(functionStats(player["ST"]));
+          $("#rs-val").html(functionStats(player["RS"]));
+          $("#lw-val").html(functionStats(player["LW"]));
+          $("#lf-val").html(functionStats(player["LF"]));
+          $("#cf-val").html(functionStats(player["CF"]));
+          $("#rf-val").html(functionStats(player["RF"]));
+          $("#rw-val").html(functionStats(player["RW"]));
+          $("#lam-val").html(functionStats(player["LAM"]));
+          $("#cam-val").html(functionStats(player["CAM"]));
+          $("#ram-val").html(functionStats(player["RAM"]));
+          $("#lm-val").html(functionStats(player["LM"]));
+          $("#lcm-val").html(functionStats(player["LCM"]));
+          $("#cm-val").html(functionStats(player["CM"]));
+          $("#rcm-val").html(functionStats(player["RCM"]));
+          $("#rm-val").html(functionStats(player["RM"]));
+          $("#lwb-val").html(functionStats(player["LWB"]));
+          $("#ldm-val").html(functionStats(player["LDM"]));
+          $("#cdm-val").html(functionStats(player["CDM"]));
+          $("#rdm-val").html(functionStats(player["RDM"]));
+          $("#rwb-val").html(functionStats(player["RWB"]));
+          $("#lb-val").html(functionStats(player["LB"]));
+          $("#lcb-val").html(functionStats(player["LCB"]));
+          $("#cb-val").html(functionStats(player["CB"]));
+          $("#rcb-val").html(functionStats(player["RCB"]));
+          $("#rb-val").html(functionStats(player["RB"]));
+
+
+
+
+          new Chart(document.getElementById("radar-chart"), {
+            type: 'radar',
+            data: {
+              labels: ["Pace", "Shooting", "Passing", "Dribbling", "Defending", "Physical"],
+              datasets: [
+              {
+                label: name,
+                fill: true,
+                backgroundColor: "rgba(28, 138, 226, 0.2)",
+                borderColor: "rgba(28, 138, 226,1)",
+                pointBorderColor: "#fff",
+                pointBackgroundColor: "rgba(28, 138, 226,1)",
+                data: talentArray
+              }
+            ]
+          },
+          options: {
+            title: {
+              display: true,
+              text: 'Stats Radar'
+            }
+          }
+  });
+
+        }});
 </script>
+<?php } ?>
 
     </body>
 </html>
