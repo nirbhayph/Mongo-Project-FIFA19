@@ -103,7 +103,7 @@
         </div> <!-- end #navigation -->
     </div> <!-- end container -->
 </div> <!-- end navbar-custom -->
-<form style="display: hidden" action="search-results.php" method="POST" id="form-r">
+<form style="display: hidden" action="/home/search/search-results.php" method="POST" id="form-r">
       <input type="hidden" id="playerDetails" name="data_player" value=""/>
       <input type="hidden" id="countP" name="playersCount" value=""/>
       <input type="hidden" id="queryP" name="playersDisplay" value=""/>
