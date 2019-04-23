@@ -495,8 +495,8 @@
                   $('#skillMoves').html(objJSON["skillMoves"]);
                   $("#height_range").ionRangeSlider({
                       grid: true,
-                      from: 3,
-                      values: JSON.parse(objJSON["heights"])
+                      values: JSON.parse(objJSON["heights"]),
+                      from: 8
                   });
                   $('#iReputation').html(objJSON["internationalReputation"]);
                   $('#rFace').html(objJSON["realFace"]);

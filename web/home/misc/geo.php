@@ -49,6 +49,8 @@
           </div>
           <form style="display: hidden" action="geo.php" method="POST" id="hiddenForm">
   <input type="hidden" id="locations" name="locations" value=""/>
+  <input type="hidden" id="radius_range_x" name="radius_range_x" value=""/>
+
 </form>
       </div> <!-- end row -->
   </div>
@@ -70,7 +72,7 @@ crossorigin=""></script>
   <script type="text/javascript">
   var locations = <?php echo $_POST["locations"]; ?>;
 
-                      var mymap = L.map('mapid').setView([locations[0]["lat"], locations[0]["lon"]], 4);
+                      var mymap = L.map('mapid').setView([locations[0]["lat"], locations[0]["lon"]], 2);
 
                       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -82,13 +84,18 @@ crossorigin=""></script>
                       var marker = L.marker([locations[i]["lat"], locations[i]["lon"]]).addTo(mymap);
                       marker.bindPopup(locations[i]["name"]).openPopup();
                     }
-                    //circle.bindPopup("Specify a value for me! (I'm the radius!)");
                     $("#radius_range").ionRangeSlider({
                       type: "single",
                       grid: true,
                       min: 0,
-                      max: 100000
+                      max: <?php echo $_POST["radius_range_x"]*1000; ?>
                     });
+                    var circle = L.circle([locations[0]["lat"], locations[0]["lon"]], {
+                        color: 'red',
+                        fillColor: '#f03',
+                        fillOpacity: 0.5,
+                        radius: 3200*1000
+                    }).addTo(mymap);
   </script>
 
   <?php
@@ -117,7 +124,7 @@ crossorigin=""></script>
                     type: "single",
                     grid: true,
                     min: 0,
-                    max: 100000
+                    max: 8000
                   });
                   </script>
                 <?php } ?>
@@ -130,6 +137,7 @@ crossorigin=""></script>
                           success: function(result){
                             console.log(result);
                             $('#locations').val(result);
+                            $('#radius_range_x').val(radius);
                             $('#hiddenForm').submit();
                           }});
 
