@@ -72,7 +72,7 @@ crossorigin=""></script>
   <script type="text/javascript">
   var locations = <?php echo $_POST["locations"]; ?>;
 
-                      var mymap = L.map('mapid').setView([locations[0]["lat"], locations[0]["lon"]], 2);
+                      var mymap = L.map('mapid').setView([locations[0]["lat"], locations[0]["lon"]], 4);
 
                       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -82,7 +82,7 @@ crossorigin=""></script>
                     }).addTo(mymap);
                     for (i = 0; i < locations.length; i++) {
                       var marker = L.marker([locations[i]["lat"], locations[i]["lon"]]).addTo(mymap);
-                      marker.bindPopup(locations[i]["name"]).openPopup();
+                      marker.bindPopup(locations[i]["name"]);
                     }
                     $("#radius_range").ionRangeSlider({
                       type: "single",
@@ -96,6 +96,7 @@ crossorigin=""></script>
                         fillOpacity: 0.5,
                         radius: <?php echo $_POST["radius_range_x"]*1000; ?>
                     }).addTo(mymap);
+                    circle.bindPopup('<?php echo "<b>Radius ".$_POST["radius_range_x"]." km(s)</b>"; ?>');
   </script>
 
   <?php
