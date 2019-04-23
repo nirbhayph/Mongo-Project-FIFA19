@@ -89,9 +89,9 @@
             <div id="navigation">
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu">
-                    <li class="has-submenu">
+                    <!--<li class="has-submenu">
                         <a href="https://gofifa.herokuapp.com/home/"><i class="mdi mdi-view-dashboard"></i> <span>Home</span> </a>
-                    </li>
+                    </li>-->
                     <li>
                     <a href="https://gofifa.herokuapp.com/home/search"><i class="mdi mdi-search-web"></i> <span>Custom Search</span> </a>
                   </li>
