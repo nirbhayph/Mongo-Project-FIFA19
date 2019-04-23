@@ -1,3 +1,3 @@
 <?php
-echo 'we are home';
+header('Location: https://gofifa.herokuapp.com/home/cover/index.php');
 ?>

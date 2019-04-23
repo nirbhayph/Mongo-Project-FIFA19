@@ -1,3 +1,3 @@
 <?php
-header('Location: /home/search/index.php');
+header('Location: /home/cover/index.php');
 ?>
