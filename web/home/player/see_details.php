@@ -860,8 +860,6 @@ marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]
               }
         });
 
-
-
 </script>
 <?php } ?>
 
