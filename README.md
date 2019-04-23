@@ -1,6 +1,6 @@
 # GoFifa (Built with PHP)
 
-Demo Links - https://gofifa.herokuapp.com
+Demo Link - https://gofifa.herokuapp.com
 
 Hosted through Heroku and Amazon Web Services
 
