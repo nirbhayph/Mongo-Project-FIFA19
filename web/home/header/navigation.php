@@ -96,7 +96,7 @@
                     <a href="https://gofifa.herokuapp.com/home/search"><i class="mdi mdi-search-web"></i> <span>Custom Search</span> </a>
                   </li>
                   <li>
-                  <a href="https://gofifa.herokuapp.com/home/miscellanious"><i class="mdi mdi-asterisk"></i> <span>Miscellanious</span> </a>
+                  <a href="https://gofifa.herokuapp.com/home/misc/geo.php"><i class="mdi mdi-asterisk"></i> <span>Miscellanious</span> </a>
                 </li>
                 </ul>
         <!-- End navigation menu -->
