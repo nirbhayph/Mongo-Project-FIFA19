@@ -1,4 +1,4 @@
-# GOFifa (Built with PHP)
+# GoFifa (Built with PHP)
 
 Demo Links - https://gofifa.herokuapp.com
 
