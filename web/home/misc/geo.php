@@ -88,13 +88,13 @@ crossorigin=""></script>
                       type: "single",
                       grid: true,
                       min: 0,
-                      max: <?php echo $_POST["radius_range_x"]*1000; ?>
+                      max: 8000
                     });
                     var circle = L.circle([locations[0]["lat"], locations[0]["lon"]], {
                         color: 'red',
                         fillColor: '#f03',
                         fillOpacity: 0.5,
-                        radius: 3200*1000
+                        radius: <?php echo $_POST["radius_range_x"]*1000; ?>
                     }).addTo(mymap);
   </script>
 
