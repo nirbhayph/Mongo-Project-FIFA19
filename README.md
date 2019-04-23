@@ -45,7 +45,7 @@ Placing and verifying setup for the client files
 4. run php from web folder
 4. visit http://localhost:<YOUR_PORT> in your browser to verify if application has been setup correctly.
 ```
-- Add mongo data folder from your local machine's mongodb path.
+- Add mongo data folder to your local machine's mongodb path.
 - Add the PHP Scripts from the scripts folder in the repository. (Change path to local php scripts for connecting with mongo in gofifa php files).  
 
 ## Similarly, you can setup the application on a MAC too.
