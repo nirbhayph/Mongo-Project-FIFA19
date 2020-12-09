@@ -71,17 +71,20 @@ crossorigin=""></script>
 <?php if(isset($_POST["locations"])){ ?>
   <script type="text/javascript">
   var locations = <?php echo $_POST["locations"]; ?>;
+                      const mapLatLng =  L.latLng(locations[0]["lat"], locations[0]["lon"]);
+                      var mymap = L.map('mapid').setView(mapLatLng, 4);
 
-                      var mymap = L.map('mapid').setView([locations[0]["lat"], locations[0]["lon"]], 4);
-
-                      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
                         maxZoom: 18,
-                        id: 'mapbox.streets',
-                        accessToken: 'pk.eyJ1IjoibmlyYmhheXBoaCIsImEiOiJjanVzajFnd3k0NnE4M3lucWdsbm1jam9sIn0.4U06eoSypRZF7TB0czQdHA'
+                        id: 'mapbox/streets-v11',
+                        tileSize: 512,
+                        zoomOffset: -1,
+                        accessToken: 'pk.eyJ1IjoicGhlcndhbmkzNyIsImEiOiJja2lncXRzMW4wNXkzMnJwZXRwbDdnMHRqIn0.iQuKxMRPV4xIlJ9jMgD29g'
                     }).addTo(mymap);
                     for (i = 0; i < locations.length; i++) {
-                      var marker = L.marker([locations[i]["lat"], locations[i]["lon"]]).addTo(mymap);
+                      const markerLatLng = L.latLng(locations[i]["lat"], locations[i]["lon"]);
+                      var marker = L.marker(markerLatLng).addTo(mymap);
                       marker.bindPopup(locations[i]["name"]);
                     }
                     $("#radius_range").ionRangeSlider({
@@ -90,7 +93,8 @@ crossorigin=""></script>
                       min: 0,
                       max: 8000
                     });
-                    var circle = L.circle([locations[0]["lat"], locations[0]["lon"]], {
+                    var circleLatLng = L.latLng(locations[0]["lat"], locations[0]["lon"]);
+                    var circle = L.circle(circleLatLng, {
                         color: 'red',
                         fillColor: '#f03',
                         fillOpacity: 0.5,
@@ -102,16 +106,18 @@ crossorigin=""></script>
   <?php
 } else {?>
     <script type="text/javascript">
-
-                    var mymap = L.map('mapid').setView([44.968046, -94.420307], 10);
+                    var mLatLng = L.latLng(44.968046, -94.420307);
+                    var mymap = L.map('mapid').setView(mLatLng, 10);
 
                     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
                       maxZoom: 18,
-                      id: 'mapbox.streets',
-                      accessToken: 'pk.eyJ1IjoibmlyYmhheXBoaCIsImEiOiJjanVzajFnd3k0NnE4M3lucWdsbm1jam9sIn0.4U06eoSypRZF7TB0czQdHA'
+                      id: 'mapbox/streets-v11',
+                      tileSize: 512,
+                      zoomOffset: -1,
+                      accessToken: 'pk.eyJ1IjoicGhlcndhbmkzNyIsImEiOiJja2lncXRzMW4wNXkzMnJwZXRwbDdnMHRqIn0.iQuKxMRPV4xIlJ9jMgD29g'
                   }).addTo(mymap);
-                  var marker = L.marker([44.968046, -94.420307]).addTo(mymap);
+                  var marker = L.marker(mLatLng).addTo(mymap);
                   /*var circle = L.circle([44.968046, -94.420307], {
                       color: 'red',
                       fillColor: '#f03',
