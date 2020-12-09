@@ -130,8 +130,8 @@ crossorigin=""></script>
                   $("#radius_range").ionRangeSlider({
                     type: "single",
                     grid: true,
-                    min: 0,
-                    max: 8000
+                    min: 300,
+                    max: 5000
                   });
                   </script>
                 <?php } ?>
