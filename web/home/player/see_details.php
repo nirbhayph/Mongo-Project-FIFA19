@@ -814,21 +814,22 @@
           }
   });
   const playerLatLng =  L.latLng(player["Latitude"], player["Longitude"]);
-  console.log("player details", player);
   var mymap = L.map('mapid').setView(playerLatLng, 9);
 
-  L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?access_token={accessToken}', {
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoicGhlcndhbmkzNyIsImEiOiJja2lncXRzMW4wNXkzMnJwZXRwbDdnMHRqIn0.iQuKxMRPV4xIlJ9jMgD29g'
 }).addTo(mymap);
 var marker = L.marker(playerLatLng).addTo(mymap);
 marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]+"</b><br>I am from <b>"+player["Nationality"]+"</b><br/> Overall Combined Rating - <b>"+player["Special"]+"</b><br/> Age - <b>"+player["Age"]+"</b><br/> Weight - <b>"+player["Weight"]+"</b><br/> Height - <b>"+player["Height"]+"</b>").openPopup();
 
         }});
-
-
-        window.setInterval(function(){
+          
+        function getAllComments(){
           $.ajax({url: 'https://pothole.ml/php/gofifa/getComments.php?id='+<?php echo $_GET["id"]; ?>,
           success: function(result){
             var getCommentTemplate = function(comment){
@@ -841,7 +842,10 @@ marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]
             }
             $('#commentsSection').html(text);
           }});
-        }, 30000);
+        }
+
+        getAllComments();
+        window.setInterval(getAllComments, 25000);
 
         $("#commentFormSubmit").click(function() {
               var commentMade = $('#commentMade').val();
