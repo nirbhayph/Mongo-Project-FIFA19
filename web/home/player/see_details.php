@@ -813,7 +813,8 @@
             }
           }
   });
-  const playerLatLng =  L.latLng(player["Longitude"], player["Latitude"]);
+  const playerLatLng =  L.latLng(player["Latitude"], player["Longitude"]);
+  console.log("player details", player);
   var mymap = L.map('mapid').setView(playerLatLng, 9);
 
   L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -835,13 +836,12 @@ marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]
             }
             var comments = JSON.parse(result);
             var text = "";
-            console.log(comments);
             for (i = 0; i < comments.length; i++) {
               text += getCommentTemplate(comments[i]);
             }
             $('#commentsSection').html(text);
           }});
-        }, 1000);
+        }, 30000);
 
         $("#commentFormSubmit").click(function() {
               var commentMade = $('#commentMade').val();
