@@ -856,6 +856,7 @@ marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]
                 success: function(result){
                   if(result==="Success"){
                     $('#commentMade').val("");
+                    getAllComments();
                   }else{
                     alert("Failed to insert message!");
                   }
