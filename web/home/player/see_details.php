@@ -813,15 +813,15 @@
             }
           }
   });
-
-  var mymap = L.map('mapid').setView([player["Longitude"], player["Latitude"]], 9);
+  const playerLatLng =  L.latLng(player["Longitude"], player["Latitude"]);
+  var mymap = L.map('mapid').setView(playerLatLng, 9);
 
   L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     accessToken: 'pk.eyJ1IjoicGhlcndhbmkzNyIsImEiOiJja2lncXRzMW4wNXkzMnJwZXRwbDdnMHRqIn0.iQuKxMRPV4xIlJ9jMgD29g'
 }).addTo(mymap);
-var marker = L.marker([player["Longitude"], player["Latitude"]]).addTo(mymap);
+var marker = L.marker(playerLatLng).addTo(mymap);
 marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]+"</b><br>I am from <b>"+player["Nationality"]+"</b><br/> Overall Combined Rating - <b>"+player["Special"]+"</b><br/> Age - <b>"+player["Age"]+"</b><br/> Weight - <b>"+player["Weight"]+"</b><br/> Height - <b>"+player["Height"]+"</b>").openPopup();
 
         }});
