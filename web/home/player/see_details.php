@@ -822,7 +822,7 @@
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoicGhlcndhbmkzNyIsImEiOiJja2lncXRzMW4wNXkzMnJwZXRwbDdnMHRqIn0.iQuKxMRPV4xIlJ9jMgD29g'
+    accessToken: 'pk.eyJ1IjoicGhlcndhbmkzNyIsImEiOiJja2lndWFmdzAwNnY3MnhwZW1xeWwwdnlyIn0.fUlCzom1s_iQT4iLiVVkBQ'
 }).addTo(mymap);
 var marker = L.marker(playerLatLng).addTo(mymap);
 marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]+"</b><br>I am from <b>"+player["Nationality"]+"</b><br/> Overall Combined Rating - <b>"+player["Special"]+"</b><br/> Age - <b>"+player["Age"]+"</b><br/> Weight - <b>"+player["Weight"]+"</b><br/> Height - <b>"+player["Height"]+"</b>").openPopup();
