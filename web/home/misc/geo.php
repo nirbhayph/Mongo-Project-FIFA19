@@ -90,8 +90,8 @@ crossorigin=""></script>
                     $("#radius_range").ionRangeSlider({
                       type: "single",
                       grid: true,
-                      min: 0,
-                      max: 8000
+                      min: 300,
+                      max: 5000
                     });
                     var circleLatLng = L.latLng(locations[0]["lat"], locations[0]["lon"]);
                     var circle = L.circle(circleLatLng, {
