@@ -820,7 +820,7 @@
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoibmlyYmhheXBoaCIsImEiOiJjanVzajFnd3k0NnE4M3lucWdsbm1jam9sIn0.4U06eoSypRZF7TB0czQdHA'
+    accessToken: 'pk.eyJ1IjoicGhlcndhbmkzNyIsImEiOiJja2lncXRzMW4wNXkzMnJwZXRwbDdnMHRqIn0.iQuKxMRPV4xIlJ9jMgD29g'
 }).addTo(mymap);
 var marker = L.marker([player["Latitude"], player["Longitude"]]).addTo(mymap);
 marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]+"</b><br>I am from <b>"+player["Nationality"]+"</b><br/> Overall Combined Rating - <b>"+player["Special"]+"</b><br/> Age - <b>"+player["Age"]+"</b><br/> Weight - <b>"+player["Weight"]+"</b><br/> Height - <b>"+player["Height"]+"</b>").openPopup();
