@@ -105,7 +105,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## Screenshots
 
-<img src="https://i.ibb.co/6yQYZgS/1.png" alt="1">
+<img src="https://i.ibb.co/S6SNxRg/1.png" alt="1">
 <img src="https://i.ibb.co/Xyg154C/2.png" alt="2">
 <img src="https://i.ibb.co/YWZ3JbJ/3.png" alt="3">
 <img src="https://i.ibb.co/kMFgSVx/4.png" alt="4">
