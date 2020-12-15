@@ -97,6 +97,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 - @jquery-knob - https://github.com/aterrien/jQuery-Knob
 - @chartjs - https://www.chartjs.org/
 - @php-mongo - https://docs.mongodb.com/drivers/php
-
-
+- @kaggle - https://kaggle.com
+- @sofifa - https://sofifa.com
 
