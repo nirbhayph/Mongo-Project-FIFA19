@@ -22,6 +22,7 @@ Link to Crawler: https://tinyurl.com/data-crawler
 - Live Communication Thread 
 - Leaflet Map (Location and Player Details)
 - Direct Text Search 
+- Completely Responsive Design
 
 ## Installation
 
