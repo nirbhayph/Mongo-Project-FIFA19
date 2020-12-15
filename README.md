@@ -106,13 +106,13 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Screenshots
 
 <img src="https://i.ibb.co/S6SNxRg/1.png" alt="1">
-<img src="https://i.ibb.co/Xyg154C/2.png" alt="2">
-<img src="https://i.ibb.co/YWZ3JbJ/3.png" alt="3">
-<img src="https://i.ibb.co/kMFgSVx/4.png" alt="4">
-<img src="https://i.ibb.co/KbTVrTx/5.png" alt="5">
-<img src="https://i.ibb.co/tmqXNMz/6.png" alt="6">
-<img src="https://i.ibb.co/BsQf6PG/7.png" alt="7">
-<img src="https://i.ibb.co/z2v7ZZP/8.png" alt="8">
-<img src="https://i.ibb.co/6gLMCcn/9.png" alt="9">
-<img src="https://i.ibb.co/nB4jJWx/10.png" alt="10">
+<img src="https://i.ibb.co/9wL64vr/2.png" alt="2">
+<img src="https://i.ibb.co/Ct2z4W4/3.png" alt="3">
+<img src="https://i.ibb.co/hCvRmxy/4.png" alt="4">
+<img src="https://i.ibb.co/NtcWyc2/5.png" alt="5">
+<img src="https://i.ibb.co/Tv4LnB1/6.png" alt="6">
+<img src="https://i.ibb.co/HgbKP2C/7.png" alt="7">
+<img src="https://i.ibb.co/xgTf66z/8.png" alt="8">
+<img src="https://i.ibb.co/KFSPvc0/9.png" alt="9">
+<img src="https://i.ibb.co/9hBW5MQ/10.png" alt="10">
 
