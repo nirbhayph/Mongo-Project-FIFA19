@@ -44,16 +44,15 @@ Install PHP
 
 Start Apache on boot
 ```
-1. sudo systemctl enable apache2.service
+sudo systemctl enable apache2.service
 ```
 
 Finally, restart Apache to allow PHP to run.
 ```
-1. systemctl restart apache2.service
+systemctl restart apache2.service
+```
 
-```
 To know more visit: https://www.vultr.com/docs/how-to-install-apache-mysql-and-php-on-ubuntu-17-04
-```
 
 Placing and verifying setup for the client files
 ```
@@ -63,8 +62,8 @@ Placing and verifying setup for the client files
 4. run php from web folder
 4. visit http://localhost:<YOUR_PORT> in your browser to verify if application has been setup correctly.
 ```
-- Add the mongo data folder to your local machine's mongodb path.
-- Add the PHP scripts from the scripts folder in the repository. (Change path to local php scripts for connecting with mongo in gofifa php files).  
+Add the mongo data folder to your local machine's mongodb path.
+Add the PHP scripts from the scripts folder in the repository. (Change path to local php scripts for connecting with mongo in gofifa php files).  
 
 ## Built With:
     - PHP
@@ -85,19 +84,19 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 - Dhiren Chandnani - @dhirensc - https://github.com/dhirensc 
 
 ## Acknowledgements and Mentions:
-@leafletjs - https://leafletjs.com/
-@beautifulsoup - https://www.crummy.com/software/BeautifulSoup/bs4/doc/
-@heroku - https://heroku.com
-@mongodb - https://mongodb.com
-@ionrangeslider - http://ionden.com/a/plugins/ion.rangeSlider/
-@jquery - https://jquery.com
-@select2 - https://select2.org/
-@jqueryui - https://jqueryui.com/
-@datatable - https://datatables.net/
-@osm - https://www.openstreetmap.org/
-@jquery-knob - https://github.com/aterrien/jQuery-Knob
-@chartjs - https://www.chartjs.org/
-@php-mongo - https://docs.mongodb.com/drivers/php
+- @leafletjs - https://leafletjs.com/
+- @beautifulsoup - https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+- @heroku - https://heroku.com
+- @mongodb - https://mongodb.com
+- @ionrangeslider - http://ionden.com/a/plugins/ion.rangeSlider/
+- @jquery - https://jquery.com
+- @select2 - https://select2.org/
+- @jqueryui - https://jqueryui.com/
+- @datatable - https://datatables.net/
+- @osm - https://www.openstreetmap.org/
+- @jquery-knob - https://github.com/aterrien/jQuery-Knob
+- @chartjs - https://www.chartjs.org/
+- @php-mongo - https://docs.mongodb.com/drivers/php
 
 
 
