@@ -58,7 +58,7 @@ $shortcutIcon = "/home/assets/images/favicon.ico";
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Cover page for <a href="../search/index.php">GoFifa</a>, by <a href="https://github.com/nirbhayph/Mongo-Project-FIFA19">Team #01</a>.</p>
+              <p>Visit <a href="../search/index.php">GoFifa</a>, Creators - <a href="https://linkedin.com/in/nirbhaypherwani" target="_blank">Nirbhay Pherwani</a> and <a href="https://linkedin.com/in/dhirenchandnani" target="_blank">Dhiren Chandnani</a>.</p>
             </div>
           </div>
 
