@@ -116,7 +116,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
     <b>Responsive Data Table</b>
     <img src="https://i.ibb.co/Ct2z4W4/3.png" alt="3">
 </p>
-<p align="center">
+<p align="left">
     <b>Player Statistics Radar Chart</b>
     <img src="https://i.ibb.co/hCvRmxy/4.png" alt="4">
 </p>
@@ -124,11 +124,11 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
     <b>Positional Rating (Soccer Field View)</b>
     <img src="https://i.ibb.co/NtcWyc2/5.png" alt="5">
 </p>
-<p align="center">
+<p align="left">
     <b>Counters</b>
     <img src="https://i.ibb.co/Tv4LnB1/6.png" alt="6">
 </p>
-<p align="center">
+<p align="left">
     <b>Skill Indicators</b>
     <img src="https://i.ibb.co/HgbKP2C/7.png" alt="7">
 </p>
