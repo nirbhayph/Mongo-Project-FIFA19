@@ -1,10 +1,31 @@
-# GoFifa (Built with PHP)
+# GoFifa (Built with PHP and MongoDB)
 
-Demo Link - https://gofifa.herokuapp.com
+## Important Links 
 
-Hosted through Heroku and Amazon Web Services
+#### Demo 
+Link to Application Demo: https://gofifa.herokuapp.com
 
-## If you're using Ubuntu on your local machine, and you want to install the prerequisites at first and then add the source, follow the following steps:
+#### Presentation
+Link to Presentation: https://tinyurl.com/gofifa-ppt
+
+#### Data Crawler
+Link to Crawler: https://tinyurl.com/data-crawler
+
+## Functionalities 
+- Customized Search (Multi-Select, Range Slider)
+- Completely Responsive Data-Table
+- Geo Near Querying (Using Mongo and Leaflet.js)
+- Image Storage using GridFS
+- Radar Chart for Player Evaluations
+- Counters and Progress Bars (Player Stats)
+- Position based Rating (Soccer Field View)
+- Live Communication Thread 
+- Leaflet Map (Location and Player Details)
+- Direct Text Search 
+
+## Installation
+
+### If you're using Ubuntu on your local machine, and you want to install the prerequisites at first and then add the source, follow the following steps:
 
 Instructions to setup the php application
 
@@ -45,53 +66,41 @@ Placing and verifying setup for the client files
 4. run php from web folder
 4. visit http://localhost:<YOUR_PORT> in your browser to verify if application has been setup correctly.
 ```
-- Add mongo data folder to your local machine's mongodb path.
-- Add the PHP Scripts from the scripts folder in the repository. (Change path to local php scripts for connecting with mongo in gofifa php files).  
-
-## Similarly, you can setup the application on a MAC too.
+- Add the mongo data folder to your local machine's mongodb path.
+- Add the PHP scripts from the scripts folder in the repository. (Change path to local php scripts for connecting with mongo in gofifa php files).  
 
 ## Built With:
     - PHP
     - MongoDB
     - Python
-    - HTML/Bootstrap4/JS/JQ
+    - HTML5
+    - Bootstrap 4
+    - JavaScript
+    - Jquery
     - GitHub
     - Leaflet
     
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details. 
 
 ## Developers:
-- Nirbhay P - @nirbhayph - https://github.com/nirbhayph 
-- Dhiren C - @dhirensc - https://github.com/dhirensc 
-- Yash B - @lucifer101 - https://github.com/lucifer101 
-- Hemanth K - @hemanthyadav29 - https://github.com/hemanthyadav29 
+- Nirbhay Pherwani - @nirbhayph - https://github.com/nirbhayph 
+- Dhiren Chandnani - @dhirensc - https://github.com/dhirensc 
 
-# PHP - Heroku Connect
+## Acknowledgements and Mentions:
+@leafletjs - https://leafletjs.com/
+@beautifulsoup - https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+@heroku - https://heroku.com
+@mongodb - https://mongodb.com
+@ionrangeslider - http://ionden.com/a/plugins/ion.rangeSlider/
+@jquery - https://jquery.com
+@select2 - https://select2.org/
+@jqueryui - https://jqueryui.com/
+@datatable - https://datatables.net/
+@osm - https://www.openstreetmap.org/
+@jquery-knob - https://github.com/aterrien/jQuery-Knob
+@chartjs - https://www.chartjs.org/
+@php-mongo - https://docs.mongodb.com/drivers/php
 
-This application supports the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
-
-## Deploying
-
-Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
-
-```sh
-$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
-$ cd php-getting-started
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using PHP on Heroku, see these Dev Center articles:
-
-- [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php)
-- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
 
 
