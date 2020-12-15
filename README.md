@@ -66,15 +66,15 @@ Add the mongo data folder to your local machine's mongodb path.
 Add the PHP scripts from the scripts folder in the repository. (Change path to local php scripts for connecting with mongo in gofifa php files).  
 
 ## Built With:
-    - PHP
-    - MongoDB
-    - Python
-    - HTML5
-    - Bootstrap 4
-    - JavaScript
-    - Jquery
-    - GitHub
-    - Leaflet
+- PHP
+- MongoDB
+- Python
+- HTML5
+- Bootstrap 4
+- JavaScript
+- Jquery
+- GitHub
+- Leaflet
     
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details. 
