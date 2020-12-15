@@ -27,9 +27,6 @@ Link to Crawler: https://tinyurl.com/data-crawler
 
 ### If you're using Ubuntu on your local machine, and you want to install the prerequisites at first and then add the source, follow the following steps:
 
-Instructions to setup the php application
-
-```
 Instruction to setup php (apache)
 
 Install Apache
