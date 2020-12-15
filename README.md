@@ -104,15 +104,46 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 - @sofifa - https://sofifa.com
 
 ## Screenshots
+<p align="center">
+    <b>Geo Near Querying</b>
+    <img src="https://i.ibb.co/S6SNxRg/1.png" alt="1">
+</p>
+<p align="center">
+    <b>Custom Search View</b>
+    <img src="https://i.ibb.co/9wL64vr/2.png" alt="2">
+</p>
+<p align="center">
+    <b>Responsive Data Table</b>
+    <img src="https://i.ibb.co/Ct2z4W4/3.png" alt="3">
+</p>
+<p align="center">
+    <b>Player Statistics Radar Chart</b>
+    <img src="https://i.ibb.co/hCvRmxy/4.png" alt="4">
+</p>
+<p align="center">
+    <b>Positional Rating (Soccer Field View)</b>
+    <img src="https://i.ibb.co/NtcWyc2/5.png" alt="5">
+</p>
+<p align="center">
+    <b>Counters</b>
+    <img src="https://i.ibb.co/Tv4LnB1/6.png" alt="6">
+</p>
+<p align="center">
+    <b>Skill Indicators</b>
+    <img src="https://i.ibb.co/HgbKP2C/7.png" alt="7">
+</p>
+<p align="center">
+    <b>Player Location and Details</b>
+    <img src="https://i.ibb.co/xgTf66z/8.png" alt="8">
+</p>
+<p align="center">
+    <b>Anonymous Comments' Section</b>
+    <img src="https://i.ibb.co/KFSPvc0/9.png" alt="9">
+</p>
+<p align="center">
+    <b>About Player</b>
+    <img src="https://i.ibb.co/9hBW5MQ/10.png" alt="10">
+</p>
 
-<img src="https://i.ibb.co/S6SNxRg/1.png" alt="1">
-<img src="https://i.ibb.co/9wL64vr/2.png" alt="2">
-<img src="https://i.ibb.co/Ct2z4W4/3.png" alt="3">
-<img src="https://i.ibb.co/hCvRmxy/4.png" alt="4">
-<img src="https://i.ibb.co/NtcWyc2/5.png" alt="5">
-<img src="https://i.ibb.co/Tv4LnB1/6.png" alt="6">
-<img src="https://i.ibb.co/HgbKP2C/7.png" alt="7">
-<img src="https://i.ibb.co/xgTf66z/8.png" alt="8">
-<img src="https://i.ibb.co/KFSPvc0/9.png" alt="9">
-<img src="https://i.ibb.co/9hBW5MQ/10.png" alt="10">
+
 
