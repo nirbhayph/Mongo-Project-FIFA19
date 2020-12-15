@@ -14,7 +14,7 @@ Link to Presentation: https://tinyurl.com/gofifa-ppt
 Link to Crawler: https://tinyurl.com/data-crawler
 
 #### Demo Video
-<a href="https://www.youtube.com/watch?v=YGNDGTnQdNQ"><img src="https://i.ibb.co/WPsJn9x/download.png" alt="video"></a>
+<a href="https://www.youtube.com/watch?v=YGNDGTnQdNQ"><img src="https://i.ibb.co/3d9ff1J/screely-1608005305630.png" alt="video"></a>
 
 ## Functionalities 
 - Customized Search (Multi-Select, Range Slider)
